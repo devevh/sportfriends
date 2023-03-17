@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<title>Créer un compte</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link rel="apple-touch-icon" href="./images/icones/logo.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="./css/w3.css" type="text/css">
+<link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
+<link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+</head>
+
+<body>
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide" id="mySidebar">
+  <button class="w3-bar-item w3-button" id="fermermenu">Fermer <i class="fa fa-remove"></i></button>
+  <a href="index.html" class="w3-bar-item w3-button w3-text-theme">Accueil</a>
+  <a href="#" class="w3-bar-item w3-button w3-text-theme" id='menuConnecter'>Se connecter</a>
+  <a href="https://framacarte.org/fr/map/e-trajet_80731" class="w3-bar-item w3-button">Carte</a>
+  <a href="#" class="w3-bar-item w3-button">Infos personnelles</a>
+  <a href="messages.html" class="w3-bar-item w3-button">Messages</a>
+  <a href="deconnexion.html" class="w3-bar-item w3-button w3-text-gray">Se déconnecter</a>
+</nav>
+<!-- Header -->
+<header class="w3-container w3-padding" id="myHeader">
+	<i class="fa fa-bars w3-xlarge w3-button w3-text-theme w3-display-top-left" name="sandwich" id="ouvrirmenu"></i>
+	<div class="w3-center">
+		<p class="w3-animate-bottom"><img src="./images/logo.png" class="logo"></p>
+		<h3 class="w3-text-theme w3-padding-top-24"><b>Créer un compte</b></h3>
+	</div>
+</header>
+<!-- Main -->
+<div id="main">
+	<div id="content" class="w3-container">
+		<header class="w3-center">
+			<p>Choisissez simplement l’offre qui vous convient, sans engagement.</p>
+        </header>
+        <span id="infoconnexion"></span>
+        <form name="formsinscrire" id="formsinscrire" action="./action/inscription.php" method="POST" >  
+		<div class="w3-row-padding">
+        <div class="w3-third-small">
+				<div class="w3-margin-small w3-border-radius w3-light-grey ">
+					<p class="w3-center w3-padding-bottom-16">
+					FREE<br>
+					<b>Publicité</b><br>
+					<input class="w3-radio" type="radio" name="premium" id="free" value="0" required />
+					<label for="free">j'ouvre un compte gratuit limité</label>
+					</p>
+					<p class="w3-center "><span class="w3-large">0</span><sup>€/mois</sup></p>
+				</div>
+		</div>
+        <div class="w3-third-small ">
+				<div class="w3-margin-small w3-border-radius w3-theme-l1">
+					<p class="w3-center w3-padding-bottom-16">BEST<br>
+					<b class="w3-text">Pas de publicité</b><br>
+					<input class="w3-radio" type="radio" name="premium" id="best" value="1" required />
+					<label for="best">j'ouvre un compte BEST </label>
+					</p>
+					<p class="w3-center "><span class="w3-large">1,99</span><sup>€/mois</sup></p>
+				</div>
+		</div>
+        <div class="w3-third-small ">
+				<div class="w3-margin-small w3-border-radius w3-theme-d2">
+					<p class="w3-center w3-padding-bottom-16">PREMIUM<br>
+					<b class="w3-text-theme-comp">Pas de publicité</b><br>
+					<input class="w3-radio" type="radio" name="premium" id="premium" value="2" required />
+					<label for="premium">j'ouvre un compte PREMIUM <b>sans</b> limite de fonction</label>
+					</p>
+					<p class="w3-center "><span class="w3-large">5,99</span><sup>€/mois</sup></p>
+				</div>
+		</div>
+		</div>
+		<div class="w3-row-padding w3-margin-top"><span id="controle"></span>
+			<div class="w3-col m4 s12 "><span>Sexe</span>
+			<input class="w3-radio" type="radio" name="sexe" id="f" value="f" required /><label for="f">Femme</label>
+			<input class="w3-radio" type="radio" name="sexe" id="h" value="h" required /><label for="h">Homme</label>
+			</div>
+			<div class="w3-col m8 s12"><label for="pseudo">Pseudo</label><input class="w3-input" type="text" name="pseudo" id="pseudo" placeholder="Pseudo" minlength="6" maxlength="20" required /></div>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-col m6 s12"><label for="prenom">Prénom</label><input class="w3-input" type="text" name="prenom" id="prenom" minlength="3" placeholder="Prénom" required /></div>
+			<div class="w3-col m6 s12"><label for="nom">Nom</label><input class="w3-input" type="text" name="nom" id="nom" minlength="4" placeholder="Nom" required /></div>
+			<div class="w3-col m6 s12"><label for="telephone">Téléphone</label><input class="w3-input" type="number" name="telephone" id="telephone" minlength="9" placeholder="066010203" required /></div>
+			<div class="w3-col m6 s12"><label for="email">Email</label><input class="w3-input" type="email" name="email" id="email" placeholder="mail@exemple.ga" /></div>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-col m6 s12"><label for="abonnement">Abonnement</label>
+			<select class="w3-input" name="abonnement" id="abonnement" required>
+				<option value="null" selected>Choisir un abonnement</option>
+				<option value="basicfit">Basic fit</option>
+				<option value="fitnesspark">Fitness park</option>
+				<option value="neoness">Neoness</option>
+				<option value="orangebleue">Orange bleue</option>
+			</select>
+			</div>
+			<div class="w3-col m6 s12"><label for="objectif">Objectif</label>
+			<select class="w3-input" name="objectif" id="objectif" required>
+				<option value="null" selected>Choisir un objectif</option>
+				<option value="renforce">renforcement</option>
+				<option value="forme">remise en forme</option>
+				<option value="masse">prise de masse</option>
+				<option value="poids">perte de poids</option>
+				<option value="activite">activité sportive</option>
+				<option value="lien">lien social</option>
+			</select>
+			</div>		
+		</div>	
+		<div class="w3-row-padding">
+			<div class="w3-col m12 s12"><label for="ville">Ville</label><input class="w3-input" type="text" name="ville" id="ville" placeholder="ville" /></div>
+		</div>
+		<div class="w3-row-padding">
+			<div class="w3-col m1 w3-margin-1em w3-center"><a href="#reponse"><i class="fa fa-eye" id="voir"></i></a></div>
+			<div class="w3-col m5"><label for="mdp1">Mot de passe</label><input class="w3-input" type="password" name="mdp1" id="mdp1" minlength="4" required /></div>
+			<div class="w3-col m1 w3-margin-1em w3-center"><i id="checkmdp" class='' ></i></div>
+			<div class="w3-col m5"><label for="mdp2">Confirmation</label><input class="w3-input" type="password" name="mdp2" id="mdp2" minlength="4" required /></div>
+		</div>
+        <div class="w3-col m12"><input type="checkbox" name="chk_consentementGV" id="chk_consentementGV" />
+          <label> En cochant cette case, vous reconnaissez explicitement avoir lu les <a href='cg.html' target='_blank'>conditions générales</a>, notamment vos droits d'accès et de suppression de vos données personnelles conformément à la règlementation en vigueur.</label>
+		</div>
+		<div class="w3-col m12 w3-margin-top w3-center">
+				<input type="submit" class="w3-button w3-theme" name="btn_inscription" id="btn_inscription" value="S'inscrire" disabled>
+				<input type="reset" class="w3-button w3-theme-comp" value="Annuler">
+		</div>
+        </form>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64">
+  <div style="position:relative;bottom:5px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-theme" href="#myHeader"><span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+<script src="./js/gestionmdp.js"></script>
+<script src="./js/inscription.js"></script>
+<script src="./app.js"></script>
+<script src="./js/w3.js"></script>
+</body>
+</html>
