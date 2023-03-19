@@ -1,192 +1,112 @@
 <!DOCTYPE html>
 <html>
-<title>SPORTFRIENDS</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/w3.css" type="text/css">
-<link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
-<link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
-<body>
-
-<!-- Side Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide" id="mySidebar">
-  <button class="w3-bar-item w3-button" id="fermermenu">Fermer <i class="fa fa-remove"></i></button>
-  <a href="inscription.html" class="w3-bar-item w3-button">Créer profil</a>
-  <a href="#" class="w3-bar-item w3-button w3-text-theme" id='menuConnecter'>Se connecter</a>
-  <a href="https://framacarte.org/fr/map/e-trajet_80731" class="w3-bar-item w3-button">Carte</a>
-  <a href="#" class="w3-bar-item w3-button">Infos personnelles</a>
-  <a href="messages.html" class="w3-bar-item w3-button">Messages</a>
-  <a href="deconnexion.html" class="w3-bar-item w3-button w3-text-gray">Se déconnecter</a>
-</nav>
-
-<!-- Header -->
-<header class="w3-container w3-padding" id="myHeader">
-  <span id="ouvrirmenu" class="fa fa-bars w3-xlarge w3-button w3-text-theme w3-display-top-left "></span> 
-  <div class="w3-center">
-	<h1 class="w3-xxxlarge ">SPORTFRIENDS</h1>
-  </div>
-</header>
-<nav class="w3-margin-left w3-bar-block"><a href="index.html">Accueil</a>>Messages
-</nav>
-<section id="messages">
-<a href="message.html">
-<article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
-<div class="w3-row w3-container">
-<div class="w3-col s11">
-  <h4>Profil 1 </h4>
-</div>
-<div class="w3-col s1">
-  <h2>&gt;</h2>
-</div>
-</div>
-</article>
-</a>
-<article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
-<div class="w3-row w3-container">
-<div class="w3-col s11">
-  <h4>Profil 2 </h4>
-</div>
-<div class="w3-col s1">
-  <h2>&gt;</h2>
-</div>
-</div>
-</article>
-<article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
-<div class="w3-row w3-container">
-<div class="w3-col s11">
-  <h4>Profil 3 </h4>
-</div>
-<div class="w3-col s1">
-  <h2>&gt;</h2>
-</div>
-</div>
-</article>
-<article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
-<div class="w3-row w3-container">
-<div class="w3-col s11">
-  <h4>Profil 4 </h4>
-</div>
-<div class="w3-col s1">
-  <h2>&gt;</h2>
-</div>
-</div>
-</article>
-<article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
-<div class="w3-row w3-container">
-<div class="w3-col s11">
-  <h4>Profil 5 </h4>
-</div>
-<div class="w3-col s1">
-  <h2>&gt;</h2>
-</div>
-</div>
-</article>
-</section>
-
-
-
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64">
-  <div style="position:relative;bottom:5px;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
-    <a class="w3-text-theme" href="#myHeader"><span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
-
-<div id="modaleConnecter" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-top">
-		<header class="w3-container w3-theme-l1"> 
-			<h2>Se connecter</h2>
-			<span id="fermerConnecter" class="w3-button w3-display-topright">×</span>
-		</header>
-		<!-- pour afficher les messages -->
-		<span id="infoconnexion"></span>
-		<!--  -->
-		<form name="seconnecter" id="seconnecter" action="./action/connexion.php" method="POST" class="w3-container">
-			<div class="w3-section">      
-				<input type="text" class="w3-input" name="pseudo" id="pseudo" size="20" required placeholder="pseudo, mail ou telephone" autofocus />
-				<!--<label>Identifiant</label>-->
-			</div>
-			<div class="w3-section">
-				<input type="password" class="w3-input" name="motdepasse" id="motdepasse" size="20" required minlength="4" placeholder="Mot de passe" />
-				<!--<label>Mot de passe</label>-->
-			</div>
-			<div class="w3-section">
-				<input type="submit" class="w3-button w3-theme" name="btn_connexion" id="btn_connexion" value="Je me connecte">
-				<input type="reset" class="w3-button w3-theme-comp" value="Annuler">
-			</div>
-		</form>
-		<footer class="w3-container w3-theme-l1">
-			<p><a href="./reinit_mdp.html">Mot de passe oublié</a> - <a href="./inscription.html">S'inscrire</a></p>
-		</footer>
+  <head>
+  <title>SPORTFRIENDS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/w3.css" type="text/css">
+  <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
+  <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+  </head>
+  <body>
+  <!-- Side Navigation -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide" id="mySidebar">
+    <button class="w3-bar-item w3-button" id="fermermenu">Fermer <i class="fa fa-remove"></i></button>
+    <a href="inscription.html" class="w3-bar-item w3-button">Créer profil</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-theme" id='menuConnecter'>Se connecter</a>
+    <a href="https://framacarte.org/fr/map/e-trajet_80731" class="w3-bar-item w3-button">Carte</a>
+    <a href="#" class="w3-bar-item w3-button">Infos personnelles</a>
+    <a href="messages.html" class="w3-bar-item w3-button">Messages</a>
+    <a href="deconnexion.html" class="w3-bar-item w3-button w3-text-gray">Se déconnecter</a>
+  </nav>
+  
+  <!-- Header -->
+  <header class="w3-container w3-padding" id="myHeader">
+    <span id="ouvrirmenu" class="fa fa-bars w3-xlarge w3-button w3-text-theme w3-display-top-left "></span> 
+    <div class="w3-center">
+      <h1 class="w3-xxxlarge ">SPORTFRIENDS</h1>
     </div>
-</div>
-
-
-<script src="./app.js"></script>
-<script src="./js/index.js"></script>
-<script src="./js/w3.js"></script>
-
-<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
-<script>
-// Side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "100%";
-  x.style.fontSize = "40px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Tabs
-function openCity(evt, cityName) {
-  var i;
-  var x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  var activebtn = document.getElementsByClassName("testbtn");
-  for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-dark-grey";
-}
-
-
-
-// Accordions
-function myAccFunc(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-
-
-// Progress Bars
-function move() {
-  var elem = document.getElementById("myBar");   
-  var width = 5;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width == 100) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-      elem.innerHTML = width * 1  + '%';
-    }
-  }
-}
-</script>
-
-</body>
+  </header>
+  <nav class="w3-margin-left w3-bar-block"><a href="index.html">Accueil</a>>Messages
+  </nav>
+  <section id="messages">
+  <a href="message.html">
+  <article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
+  <div class="w3-row w3-container">
+  <div class="w3-col s11">
+    <h4>Profil 1 </h4>
+  </div>
+  <div class="w3-col s1">
+    <h2>&gt;</h2>
+  </div>
+  </div>
+  </article>
+  </a>
+  <article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
+  <div class="w3-row w3-container">
+  <div class="w3-col s11">
+    <h4>Profil 2 </h4>
+  </div>
+  <div class="w3-col s1">
+    <h2>&gt;</h2>
+  </div>
+  </div>
+  </article>
+  <article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
+  <div class="w3-row w3-container">
+  <div class="w3-col s11">
+    <h4>Profil 3 </h4>
+  </div>
+  <div class="w3-col s1">
+    <h2>&gt;</h2>
+  </div>
+  </div>
+  </article>
+  <article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
+  <div class="w3-row w3-container">
+  <div class="w3-col s11">
+    <h4>Profil 4 </h4>
+  </div>
+  <div class="w3-col s1">
+    <h2>&gt;</h2>
+  </div>
+  </div>
+  </article>
+  <article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
+  <div class="w3-row w3-container">
+  <div class="w3-col s11">
+    <h4>Profil 5 </h4>
+  </div>
+  <div class="w3-col s1">
+    <h2>&gt;</h2>
+  </div>
+  </div>
+  </article>
+  </section>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32">
+    <div style="position:relative;bottom:5px;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+      <a class="w3-text-theme" href="#myHeader"><span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+  </footer>
+    <!-- div menu -->
+    <nav id="menufixe" class="menufixebas">
+        <article class="w3-col s2"><a href="rechercheprofil.html"><i class="fa fa-search"></i></a>
+        </article>
+        <article class="w3-col s2"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map"></i></a>
+        </article>
+        <article class="w3-col s2"><a href="profils.html"><i class="fa fa-users"></i></a>
+        </article>
+        <article class="w3-col s2"><a href="compte.html"><i class="fa fa-user-circle"></i></a>
+        </article>
+        <article class="w3-col s2"><a href="messages.html"><i class="fa fa-message"></i></a>
+        </article>
+        <article class="w3-col s2"><a href="partenaires.html"><i class="fa fa-cart-shopping"></i></a>
+        </article>    
+    </nav>
+  <script src="./app.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/w3.js"></script>
+  </body>
 </html>
