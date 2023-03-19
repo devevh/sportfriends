@@ -31,7 +31,7 @@
   </nav>
   <section id="profils" class="w3-row w3-container w3-center">
     <article class="w3-col s4 w3-padding-small w3-margin-top" id="P1">
-    <a href="profil.php?id=P1">
+    <a href="#" onclick="return false">
       <img src="./images/profil-768x890.png" alt="P1" class="logo w3-badge">
 	  P1
     </a>
@@ -110,21 +110,57 @@
       <a class="w3-text-theme" href="#myHeader"><span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span></a>
     </div>
   </footer>
+  <!-- modale afficher le profil -->
+  <div id="modaleAfficherProfil" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1 w3-center"> 
+        <h2>Pseudo</h2>
+        <span id="fermerAfficherProfil" class="w3-button w3-display-topright">×</span>
+      </header>
+      <!-- pour afficher les messages -->
+      <span id="infoAfficherProfil"></span>
+	  <section id="AfficherProfil" class="w3-row w3-center">
+	    <div class="w3-col w3-padding-large">
+		  <img src="./images/profil-768x890.png" alt="Pseudo" class="logo w3-badge">
+		</div>
+      <!-- age, sexe, ville, abonnement, objectif -->
+	    <div class="w3-col s4">
+		  <p>Age</p>
+		</div>
+	    <div class="w3-col s4">
+		  <p>Sexe</p>
+		</div>
+	    <div class="w3-col s4">
+		  <p>Ville</p>
+		</div>
+	    <div class="w3-col s6">
+		  <p>Abonnement</p>
+		</div>
+	    <div class="w3-col s6">
+		  <p>Objectif</p>
+		</div>
+	  </section>
+      <footer class="w3-container w3-theme-l1 w3-center">
+        <p><a href="./message.html">Message</a> - <a href="./masquerprofil.html">Masquer</a></p>
+      </footer>
+    </div>
+  </div>
     <!-- div menu -->
     <nav id="menufixe" class="menufixebas">
-        <article class="w3-col s2"><a href="rechercheprofil.html"><i class="fa fa-search"></i></a>
-        </article>
-        <article class="w3-col s2"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map"></i></a>
-        </article>
-        <article class="w3-col s2"><a href="profils.html"><i class="fa fa-users"></i></a>
-        </article>
-        <article class="w3-col s2"><a href="compte.html"><i class="fa fa-user-circle"></i></a>
-        </article>
-        <article class="w3-col s2"><a href="messages.html"><i class="fa fa-message"></i></a>
-        </article>
-        <article class="w3-col s2"><a href="partenaires.html"><i class="fa fa-cart-shopping"></i></a>
-        </article>    
+      <article class="w3-col s2"><a href="rechercheprofil.html"><i class="fa fa-search"></i></a>
+      </article>
+      <article class="w3-col s2"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map"></i></a>
+      </article>
+      <article class="w3-col s2"><a href="profils.html"><i class="fa fa-users"></i></a>
+      </article>
+      <article class="w3-col s2"><a href="compte.html"><i class="fa fa-user-circle"></i></a>
+      </article>
+      <article class="w3-col s2"><a href="messages.html"><i class="fa fa-message"></i></a>
+      </article>
+      <article class="w3-col s2"><a href="partenaires.html"><i class="fa fa-cart-shopping"></i></a>
+      </article>    
     </nav>
+  <script src="./js/profils.js"></script>
   <script src="./app.js"></script>
   <script src="./js/w3.js"></script>
   </body>
