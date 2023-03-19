@@ -237,20 +237,20 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 /*specifique*/
-#imglogo {width: 20%}
-#checkmdp {font-size:16pt}
-.voir-mdp {margin-top:2em;}
+#imglogo{width: 40%}
+#checkmdp{font-size:16pt}
+.voir-mdp{margin-top:2em;}
 @media (min-width:601px){.drapeau{height:40px} .logo{height:200px}}
-@media (max-width:600px){.logo{height:180px}}
+@media (max-width:600px){.logo{height:100%;width:100%}}
 .w3-underline{text-decoration:underline;cursor:pointer}
 .w3-padding-bottom-64{padding-bottom:64px!important}.w3-padding-bottom-48{padding-bottom:48px!important}
 .w3-padding-bottom-32{padding-bottom:32px!important}.w3-padding-bottom-24{padding-bottom:24px!important}
 .w3-padding-bottom-16{padding-bottom:16px!important}
 .w3-margin-1em{margin-top:1em;margin-bottom:1em}
 .w3-italic{font-style:italic}
-.divfixe {position: fixed;bottom: 0;left: 0;margin-left : 0.75em;margin-bottom : 0.75em;font-size: 3em;font-weight: 800;color:FFF;background-color : #bbb;opacity : 0.3;border-radius : 0.1em;}
-.menufixebas {position: fixed;bottom:0;left:0;font-size:1.8em;font-weight:600;color:FFF;background-color:#fff;height:80px;width:100%;border-top:1px solid black;text-align:center;padding-top:5%;vertical-align:middle}
-input:required {border : solid 1px black;}
-.erreur {background-color: red;color: #e9e9e2;font-weight: bold;}
-.avertissement {background-color: #ffd11a;color: #2c2c21;font-weight: bold;}
-.information {background-color: #0b33c;color: #e9e9e2;font-weight: bold;}
+.divfixe{position:fixed;bottom:0;left:0;margin-left:0.75em;margin-bottom:0.75em;font-size:3em;font-weight:800;color:#fff;background-color:#bbb;opacity:0.3;border-radius:0.1em;}
+.menufixebas{position:fixed;bottom:0;left:0;font-size:1.8em;font-weight:600;color:#000;background-color:#fff;height:80px;width:100%;border-top:1px solid black;text-align:center;padding-top:5%}
+input:required{border:solid 1px black;}
+.erreur{background-color: red;color: #e9e9e2;font-weight: bold;}
+.avertissement{background-color: #ffd11a;color: #2c2c21;font-weight: bold;}
+.information{background-color: #0b33c;color: #e9e9e2;font-weight: bold;}
