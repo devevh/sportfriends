@@ -30,20 +30,20 @@
   <nav class="w3-margin-left w3-bar-block"><a href="index.html">Accueil</a>>Profils
   </nav>
   <section id="profils" class="w3-row w3-container w3-center">
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P1">
+    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P1" onclick="recupInfosProfil(this.id)">
     <a href="#" onclick="return false">
       <img src="./images/profil-768x890.png" alt="P1" class="logo w3-badge">
 	  P1
     </a>
     </article>
     <article class="w3-col s4 w3-padding-small w3-margin-top" id="P2">
-    <a href="profil.php?id=P2">
+    <a href="#" onclick="return false">
       <img src="./images/profil-768x890.png" alt="P2" class="logo w3-badge">
 	  P2
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P3">
-    <a href="profil.php?id=P3">
+    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P3" onclick="recupInfosProfil(this.id)">
+    <a href="#">
       <img src="./images/profil-768x890.png" alt="P3" class="logo w3-badge">
 	  P3
     </a>
@@ -60,32 +60,32 @@
 	  P5
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P6">
-    <a href="profil.php?id=P6">
+    <article class="w3-col s4 w3-padding-small w3-margin-top profils" id="P6">
+    <a href="#">
       <img src="./images/profil-768x890.png" alt="P6" class="logo w3-badge">
 	  P6
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P7">
-    <a href="profil.php?id=P7">
+    <article class="w3-col s4 w3-padding-small w3-margin-top profils" id="P7">
+    <a href="#">
       <img src="./images/profil-768x890.png" alt="P7" class="logo w3-badge">
 	  P7
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P8">
-    <a href="profil.php?id=P8">
+    <article class="w3-col s4 w3-padding-small w3-margin-top profils" id="P8">
+    <a href="#">
       <img src="./images/profil-768x890.png" alt="P8" class="logo w3-badge">
 	  P8
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P9">
-    <a href="profil.php?id=P9">
+    <article class="w3-col s4 w3-padding-small w3-margin-top profils" id="P9">
+    <a href="#">
       <img src="./images/profil-768x890.png" alt="P9" class="logo w3-badge">
 	  P9
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P10">
-    <a href="profil.php?id=P10">
+    <article class="w3-col s4 w3-padding-small w3-margin-top profils" id="P10">
+    <a href="#">
       <img src="./images/profil-768x890.png" alt="P10" class="logo w3-badge">
 	  P10
     </a>
@@ -112,7 +112,7 @@
   </footer>
   <!-- modale afficher le profil -->
   <div id="modaleAfficherProfil" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <div id="contenuModaleProfil" class="w3-modal-content w3-card-4 w3-animate-top">
       <header class="w3-container w3-theme-l1 w3-center"> 
         <h2>Pseudo</h2>
         <span id="fermerAfficherProfil" class="w3-button w3-display-topright">×</span>
@@ -141,7 +141,86 @@
 		</div>
 	  </section>
       <footer class="w3-container w3-theme-l1 w3-center">
-        <p><a href="./message.html">Message</a> - <a href="./masquerprofil.html">Masquer</a></p>
+        <p>
+		  <a href="./message.html">Message</a> <!--
+		  - <a href="./masquerprofil.html">Masquer</a> -->
+		</p>
+      </footer>
+    </div>
+  </div>
+  <!-- modale afficher le profil -->
+  <div id="modaleAfficherProfilP1" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1 w3-center"> 
+        <h2>Pseudo P1</h2>
+        <span id="fermerAfficherProfilP1" class="w3-button w3-display-topright">×</span>
+      </header>
+      <!-- pour afficher les messages -->
+      <span id="infoAfficherProfilP1"></span>
+	  <section id="AfficherProfilP1" class="w3-row w3-center">
+	    <div class="w3-col w3-padding-large">
+		  <img src="./images/profil-768x890.png" alt="Pseudo" class="logo w3-badge">
+		</div>
+      <!-- age, sexe, ville, abonnement, objectif -->
+	    <div class="w3-col s4">
+		  <p>Age</p>
+		</div>
+	    <div class="w3-col s4">
+		  <p>Sexe</p>
+		</div>
+	    <div class="w3-col s4">
+		  <p>Ville</p>
+		</div>
+	    <div class="w3-col s6">
+		  <p>Abonnement</p>
+		</div>
+	    <div class="w3-col s6">
+		  <p>Objectif</p>
+		</div>
+	  </section>
+      <footer class="w3-container w3-theme-l1 w3-center">
+        <p>
+		  <a href="./message.html">Message</a> <!--
+		  - <a href="./masquerprofil.html">Masquer</a> -->
+		</p>
+      </footer>
+    </div>
+  </div>
+  <!-- modale afficher le profil -->
+  <div id="modaleAfficherProfilP2" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1 w3-center"> 
+        <h2>Pseudo P2</h2>
+        <span id="fermerAfficherProfilP2" class="w3-button w3-display-topright">×</span>
+      </header>
+      <!-- pour afficher les messages -->
+      <span id="infoAfficherProfilP2"></span>
+	  <section id="AfficherProfilP2" class="w3-row w3-center">
+	    <div class="w3-col w3-padding-large">
+		  <img src="./images/profil-768x890.png" alt="Pseudo" class="logo w3-badge">
+		</div>
+      <!-- age, sexe, ville, abonnement, objectif -->
+	    <div class="w3-col s4">
+		  <p>Age</p>
+		</div>
+	    <div class="w3-col s4">
+		  <p>Sexe</p>
+		</div>
+	    <div class="w3-col s4">
+		  <p>Ville</p>
+		</div>
+	    <div class="w3-col s6">
+		  <p>Abonnement</p>
+		</div>
+	    <div class="w3-col s6">
+		  <p>Objectif</p>
+		</div>
+	  </section>
+      <footer class="w3-container w3-theme-l1 w3-center">
+        <p>
+		  <a href="./message.html">Message</a> <!--
+		  - <a href="./masquerprofil.html">Masquer</a> -->
+		</p>
       </footer>
     </div>
   </div>
