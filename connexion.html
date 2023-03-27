@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <title>Front SPORTFRIENDS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/w3.css" type="text/css">
+    <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
+    <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+  </head>
+  <body>
+  <section class="w3-container w3-center" id="main">
+    <header class="w3-padding-top-64 w3-margin-bottom-32">
+      <p class="w3-xlarge"><b>contents de vous revoir parmi nous !</b></p>
+	</header>
+    </div>
+  </div>
+	<article class="w3-bar-block w3-margin-32 w3-margin-bottom-32 w3-padding-32">
+      <!-- pour afficher les messages -->
+      <span id="infoconnexion"></span>
+      <!--  -->
+      <form name="seconnecter" id="seconnecter" action="./action/connexion.php" method="POST" class="w3-container">
+        <section class="w3-section w3-bar-block ">      
+          <input type="text" class="w3-input" name="pseudo" id="pseudo" size="20" required placeholder="pseudo, mail" autofocus />
+          <!--<label>Identifiant</label>-->
+        </section>
+        <section class="w3-section w3-bar-block ">
+          <input type="password" class="w3-input" name="motdepasse" id="motdepasse" size="20" required minlength="4" placeholder="Mot de passe" />
+          <!--<label>Mot de passe</label>-->
+        </section>
+        <section class="w3-section w3-bar-block ">
+          <input type="submit" class="w3-input w3-theme" name="btn_connexion" id="btn_connexion" value="CONNEXION">
+        </section>
+      </form>
+      <footer class="w3-container ">
+        <p><a href="./reinit_mdp.html">Mot de passe oublié ?</a></p>
+      </footer>
+	</article>
+    <!-- Footer -->
+    <footer class="w3-container w3-margin-32">
+	  <p class="w3-xlarge w3-bold"></p>
+    </footer>
+  </section>
+  </body>
+</html>

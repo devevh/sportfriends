@@ -13,32 +13,22 @@
     <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
   </head>
   <body>
-    <!-- Side Navigation -->
-    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide" id="mySidebar">
-      <button class="w3-bar-item w3-button" id="fermermenu">Fermer <i class="fa fa-remove"></i></button>
-      <a href="index.html" class="w3-bar-item w3-button w3-text-theme">Accueil</a>
-      <a href="#" class="w3-bar-item w3-button w3-text-theme" id='menuConnecter'>Se connecter</a>
-      <a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198" class="w3-bar-item w3-button">Carte</a>
-      <a href="#" class="w3-bar-item w3-button">Infos personnelles</a>
-      <a href="messages.html" class="w3-bar-item w3-button">Messages</a>
-      <a href="deconnexion.html" class="w3-bar-item w3-button w3-text-gray">Se déconnecter</a>
-    </nav>
     <!-- Header -->
-    <header class="w3-container w3-padding" id="myHeader">
-      <i class="fa fa-bars w3-xlarge w3-button w3-text-theme w3-display-top-left" name="sandwich" id="ouvrirmenu"></i>
+    <header class="w3-container w3-padding">
       <div class="w3-center">
-        <p class="w3-animate-bottom"><img src="./images/logo.png" class="" id="imglogo"></p>
-        <h3 class="w3-text-theme w3-padding-top-24"><b>Créer un compte</b></h3>
+        <p class=""><img src="./images/logo.png" class="" id="imglogo"></p>
+        <h3 class="w3-text-theme w3-padding-top-24"><b>Inscription</b></h3>
       </div>
     </header>
     <!-- Main -->
     <div id="main">
       <div id="content" class="w3-container">
         <header class="w3-center">
-          <p>Choisissez simplement l’offre qui vous convient, sans engagement.</p>
+          <p></p>
         </header>
         <span id="infoconnexion"></span>
-        <form name="formsinscrire" id="formsinscrire" action="./action/inscription.php" method="POST" >  
+        <form name="formsinscrire" id="formsinscrire" action="./action/inscription.php" method="POST" >
+		<!--
           <div class="w3-row-padding">
           <div class="w3-third-small">
             <div class="w3-margin-small w3-border-radius w3-light-grey ">
@@ -72,22 +62,25 @@
             </div>
           </div>
           </div>
+		  -->
           <div class="w3-row-padding w3-margin-top"><span id="controle"></span>
-            <div class="w3-col m4 s12 "><span>Sexe</span>
-            <input class="w3-radio" type="radio" name="sexe" id="f" value="f" required><label for="f">Femme</label>
-            <input class="w3-radio" type="radio" name="sexe" id="h" value="h" required><label for="h">Homme</label>
+            <div class="w3-col m8 s12 w3-margin-bottom"><label for="pseudo">Pseudo</label><input class="w3-input" type="text" name="pseudo" id="pseudo" placeholder="Pseudo" minlength="6" maxlength="20" required></div>
+          </div>
+          <div class="w3-row-padding">
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="prenom">Prénom</label><input class="w3-input" type="text" name="prenom" id="prenom" minlength="3" placeholder="Prénom" required></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="nom">Nom</label><input class="w3-input" type="text" name="nom" id="nom" minlength="4" placeholder="Nom" required></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="email">Email</label><input class="w3-input" type="email" name="email" id="email" placeholder="mail@exemple.fr"></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="mdp1">Mot de passe&nbsp;<a href="#reponse"><i class="fa fa-eye" id="voir"></i></a></label><input class="w3-input" type="password" name="mdp1" id="mdp1" minlength="4" required></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="mdp2">Confirmation&nbsp;<i id="checkmdp" class='' ></i></label><input class="w3-input" type="password" name="mdp2" id="mdp2" minlength="4" required></div>
+            <div class="w3-col m6 s12 w3-margin-top w3-margin-bottom"><span class="w3-margin-left">Sexe</span>
+            <input class="w3-radio w3-margin-left" type="radio" name="sexe" id="f" value="f" required><label for="f">Femme</label>
+            <input class="w3-radio w3-margin-left" type="radio" name="sexe" id="h" value="h" required><label for="h">Homme</label>
             </div>
-            <div class="w3-col m8 s12"><label for="pseudo">Pseudo</label><input class="w3-input" type="text" name="pseudo" id="pseudo" placeholder="Pseudo" minlength="6" maxlength="20" required></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="naissance">Date de naissance</label><input class="w3-input" type="date" name="naissance" id="naissance" min="1940-01-01" max="2004-01-01"></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="ville">Ville</label><input class="w3-input" type="text" name="ville" id="ville" placeholder="ville" required></div>
           </div>
           <div class="w3-row-padding">
-            <div class="w3-col m6 s12"><label for="prenom">Prénom</label><input class="w3-input" type="text" name="prenom" id="prenom" minlength="3" placeholder="Prénom" required></div>
-            <div class="w3-col m6 s12"><label for="nom">Nom</label><input class="w3-input" type="text" name="nom" id="nom" minlength="4" placeholder="Nom" required></div>
-            <div class="w3-col m6 s12"><label for="telephone">Téléphone</label><input class="w3-input" type="number" name="telephone" id="telephone" minlength="9" placeholder="066010203" required></div>
-            <div class="w3-col m6 s12"><label for="email">Email</label><input class="w3-input" type="email" name="email" id="email" placeholder="mail@exemple.ga"></div>
-            <div class="w3-col m6 s12"><label for="naissance">Date de naissance</label><input class="w3-input" type="date" name="naissance" id="naissance" min="1940-01-01" max="2004-01-01"></div>
-          </div>
-          <div class="w3-row-padding">
-              <div class="w3-col m6 s12"><label for="abonnement">Abonnement</label>
+              <div class="w3-col m6 s12 w3-margin-bottom"><label for="abonnement">Abonnement</label>
               <select class="w3-input" name="abonnement" id="abonnement" required>
                 <option value="null" selected>Choisir un abonnement</option>
                 <option value="basicfit">Basic fit</option>
@@ -96,7 +89,7 @@
                 <option value="orangebleue">Orange bleue</option>
               </select>
               </div>
-              <div class="w3-col m6 s12"><label for="objectif">Objectif</label>
+              <div class="w3-col m6 s12 w3-margin-bottom"><label for="objectif">Objectif</label>
               <select class="w3-input" name="objectif" id="objectif" required>
                 <option value="null" selected>Choisir un objectif</option>
                 <option value="renforce">renforcement</option>
@@ -107,18 +100,28 @@
                 <option value="lien">lien social</option>
               </select>
               </div>      
-          </div>  
-          <div class="w3-row-padding">
-            <div class="w3-col m12 s12"><label for="ville">Ville</label><input class="w3-input" type="text" name="ville" id="ville" placeholder="ville" required></div>
           </div>
           <div class="w3-row-padding">
-            <div class="w3-col m1 w3-margin-1em w3-center"><a href="#reponse"><i class="fa fa-eye" id="voir"></i></a></div>
-            <div class="w3-col m5"><label for="mdp1">Mot de passe</label><input class="w3-input" type="password" name="mdp1" id="mdp1" minlength="4" required></div>
-            <div class="w3-col m1 w3-margin-1em w3-center"><i id="checkmdp" class='' ></i></div>
-            <div class="w3-col m5"><label for="mdp2">Confirmation</label><input class="w3-input" type="password" name="mdp2" id="mdp2" minlength="4" required></div>
+            <div class="w3-col m12 s12 w3-margin-bottom"><label for="description">Description</label><textarea class="w3-input" name="description" id="description" placeholder="quelques mots de présentation" required></textarea></div>
           </div>
+          <!-- uploade photo-->
+		<!--
+        <div class="w3-row-padding"><span>Photo de profil (image jpg ou png, taille entre 30ko et 2Mo) </span>
+        <span id="infoUploade"></span>
+          <form enctype='multipart/form-data' id='form_profil' method='POST' action='uploade.php'>
+              <div class="w3-col m12 w3-margin-top w3-center">
+			    <input type="hidden" name="pseudoprofil" id="pseudoprofil" value="<?php echo $SESpseudo; ?>">
+                <input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+                <input name="userfile" type="file" class="w3-input">
+			  </div>
+              <div class="w3-col m12 w3-margin-top w3-center">
+			    <input type="submit" class="w3-button w3-theme" name="btn_enregistreravatar" id="btn_enregistreravatar" value="Enregistrer">
+		      </div>
+          </form>
+        </div>
+		-->
           <div class="w3-col m12"><input type="checkbox" name="chk_consentementGV" id="chk_consentementGV">
-            <label> En cochant cette case, vous reconnaissez explicitement avoir lu les <a href='cg.html' target='_blank'>conditions générales</a>, notamment vos droits d'accès et de suppression de vos données personnelles conformément à la règlementation en vigueur.</label>
+            <label> En cochant cette case, vous reconnaissez explicitement avoir lu les <a href='cg.html' target='_blank'>conditions générales</a>.</label>
           </div>
           <div class="w3-col m12 w3-margin-top w3-center">
             <input type="submit" class="w3-button w3-theme" name="btn_inscription" id="btn_inscription" value="S'inscrire" disabled>

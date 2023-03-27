@@ -120,6 +120,20 @@
             <input type="reset" class="w3-button w3-theme-comp" value="Annuler">
           </div>
         </form>
+          <!-- uploade photo-->
+        <div class="w3-row-padding"><span>Photo de profil (image jpg ou png, taille entre 30ko et 2Mo) </span>
+        <span id="infoUploade"></span>
+          <form enctype='multipart/form-data' id='form_profil' method='POST' action='uploade.php'>
+              <div class="w3-col m12 w3-margin-top w3-center">
+			    <input type="hidden" name="pseudoprofil" id="pseudoprofil" value="<?php echo $SESpseudo; ?>">
+                <input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+                <input name="userfile" type="file" class="w3-input">
+			  </div>
+              <div class="w3-col m12 w3-margin-top w3-center">
+			    <input type="submit" class="w3-button w3-theme" name="btn_enregistreravatar" id="btn_enregistreravatar" value="Enregistrer">
+		      </div>
+          </form>
+        </div>
       </div>
     </div>
     
@@ -147,6 +161,7 @@
     </nav>
     <script src="./js/gestionmdp.js"></script>
     <script src="./js/inscription.js"></script>
+    <script src="./js/compte.js"></script>
     <script src="./app.js"></script>
     <script src="./js/w3.js"></script>
   </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html lang="fr">
   <head>
-    <title>SPORTFRIENDS</title>
+    <title>Front SPORTFRIENDS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/w3.css" type="text/css">
@@ -9,119 +9,21 @@
     <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
   </head>
   <body>
-  <!-- Side Navigation -->
-  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide" id="mySidebar">
-    <button class="w3-bar-item w3-button" id="fermermenu">Fermer <i class="fa fa-remove"></i></button>
-    <a href="inscription.html" class="w3-bar-item w3-button">Créer profil</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-theme" id='menuConnecter'>Se connecter</a>
-    <a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198" class="w3-bar-item w3-button">Carte</a>
-    <a href="compte.html" class="w3-bar-item w3-button">Infos personnelles</a>
-    <a href="messages.html" class="w3-bar-item w3-button">Messages</a>
-    <a href="deconnexion.html" class="w3-bar-item w3-button w3-text-gray">Se déconnecter</a>
-  </nav>
-  <!-- Header -->
-  <header class="w3-container w3-padding" id="myHeader">
-    <span id="ouvrirmenu" class="fa fa-bars w3-xlarge w3-button w3-text-theme w3-display-top-left "></span> 
-    <div class="w3-center">
+  <section class="w3-container w3-center" id="main">
+    <header class="w3-padding-top-64 w3-padding-bottom-64">
       <p class=""><img src="./images/logo.png" id="imglogo"></p>
       <h1 class="w3-xxxlarge w3-hide-small">SPORTFRIENDS</h1>
-    </div>
-  </header>
-  <section class="w3-container" id="main">
-    <!-- profils -->
-    <section class="w3-row w3-container" id="profils">
-      <div class="w3-col s11">
-        <h2><a href="profils.html">Profils</a> </h2>
-      </div>
-      <div class="w3-col s1">
-        <h2>&gt;</h2>
-      </div>
-    </section>
-    <section class="w3-row w3-container" id="listeprofils">
-      <article class="w3-col s3" id="P1">P1
-      </article>
-      <article class="w3-col s3" id="P2">P2
-      </article>
-      <article class="w3-col s3" id="P3">P3
-      </article>
-      <article class="w3-col s3" id="P4">P4
-      </article>
-    </section>
-    <hr>
-    <!-- messages -->
-    <section class="w3-row w3-container" id="messages">
-      <div class="w3-col s11">
-        <h2><a href="messages.html">Messages</a> </h2>
-      </div>
-      <div class="w3-col s1">
-        <h2>&gt;</h2>
-      </div>
-    </section>
-    <hr>
-    <!-- partenaires -->
-    <section class="w3-row w3-container" id="partenaires">
-      <div class="w3-col s11">
-        <h2><a href="partenaires.html">Partenaires</a> </h2>
-      </div>
-      <div class="w3-col s1">
-        <h2>&gt;</h2>
-      </div>
-    </section>
-    <hr>
+	</header>
+	<article class="w3-bar-block w3-theme w3-margin-32 w3-margin-bottom-32 w3-padding">
+	  <p class="w3-large"><a href="inscription.html" class="w3-a-nounderline"><b>INSCRIPTION</b></a></p>
+	</article>
+	<article class="w3-bar-block w3-theme w3-margin-32 w3-margin-bottom-32 w3-padding">
+	  <p class="w3-large"><a href="connexion.html" class="w3-a-nounderline"><b>CONNEXION</b></a></p>
+	</article>
+    <!-- Footer -->
+    <footer class="w3-container w3-margin-32">
+	  <p class="w3-xlarge w3-bold">Phrase d'accroche</p>
+    </footer>
   </section>
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32">
-    <div style="position:relative;bottom:5px;" class="w3-tooltip w3-right">
-      <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
-      <a class="w3-text-theme" href="#myHeader"><span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span></a>
-    </div>
-  </footer>
-  <!-- div menu -->
-  <nav id="menufixe" class="menufixebas">
-    <article class="w3-col s2"><a href="rechercheprofil.html"><i class="fa fa-search"></i></a>
-    </article>
-    <article class="w3-col s2"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map"></i></a>
-    </article>
-    <article class="w3-col s2"><a href="profils.html"><i class="fa fa-users"></i></a>
-    </article>
-    <article class="w3-col s2"><a href="compte.html"><i class="fa fa-user-circle"></i></a>
-    </article>
-    <article class="w3-col s2"><a href="messages.html"><i class="fa fa-message"></i></a>
-    </article>
-    <article class="w3-col s2"><a href="partenaires.html"><i class="fa fa-cart-shopping"></i></a>
-    </article>    
-  </nav>
-  <!-- modale formulaire pour se connecter -->
-  <div id="modaleConnecter" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1"> 
-          <h2>Se connecter</h2>
-          <span id="fermerConnecter" class="w3-button w3-display-topright">×</span>
-      </header>
-      <!-- pour afficher les messages -->
-      <span id="infoconnexion"></span>
-      <!--  -->
-      <form name="seconnecter" id="seconnecter" action="./action/connexion.php" method="POST" class="w3-container">
-        <div class="w3-section">      
-          <input type="text" class="w3-input" name="pseudo" id="pseudo" size="20" required placeholder="pseudo, mail ou telephone" autofocus />
-          <!--<label>Identifiant</label>-->
-        </div>
-        <div class="w3-section">
-          <input type="password" class="w3-input" name="motdepasse" id="motdepasse" size="20" required minlength="4" placeholder="Mot de passe" />
-          <!--<label>Mot de passe</label>-->
-        </div>
-        <div class="w3-section">
-          <input type="submit" class="w3-button w3-theme" name="btn_connexion" id="btn_connexion" value="Je me connecte">
-          <input type="reset" class="w3-button w3-theme-comp" value="Annuler">
-        </div>
-      </form>
-      <footer class="w3-container w3-theme-l1">
-        <p><a href="./reinit_mdp.html">Mot de passe oublié</a> - <a href="./inscription.html">S'inscrire</a></p>
-      </footer>
-    </div>
-  </div>
-  <script src="./app.js"></script>
-  <script src="./js/index.js"></script>
-  <script src="./js/w3.js"></script>
   </body>
 </html>
