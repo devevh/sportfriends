@@ -21,15 +21,16 @@
       <!--  -->
       <form name="seconnecter" id="seconnecter" action="./action/connexion.php" method="POST" class="w3-container">
         <section class="w3-section w3-bar-block ">      
-          <input type="text" class="w3-input" name="pseudo" id="pseudo" size="20" required placeholder="pseudo, mail" autofocus />
+          <input type="text" class="w3-input" name="pseudo" id="pseudo" size="20" placeholder="pseudo, mail" required autofocus>
           <!--<label>Identifiant</label>-->
         </section>
         <section class="w3-section w3-bar-block ">
-          <input type="password" class="w3-input" name="motdepasse" id="motdepasse" size="20" required minlength="4" placeholder="Mot de passe" />
+          <input type="password" class="w3-input" name="motdepasse" id="motdepasse" size="20" minlength="4" placeholder="Mot de passe" required>
           <!--<label>Mot de passe</label>-->
         </section>
         <section class="w3-section w3-bar-block ">
-          <input type="submit" class="w3-input w3-theme" name="btn_connexion" id="btn_connexion" value="CONNEXION">
+          <!--<input type="submit" class="w3-input w3-theme" name="btn_connexion" id="btn_connexion" value="CONNEXION" >-->
+          <input type="button" class="w3-input w3-theme" name="btn_connexion" id="btn_connexion" value="CONNEXION" onclick="location.href='accueil.html'">
         </section>
       </form>
       <footer class="w3-container ">

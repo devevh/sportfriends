@@ -9,94 +9,85 @@
   <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
   </head>
   <body>
-  <!-- Side Navigation -->
-  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide" id="mySidebar">
-    <button class="w3-bar-item w3-button" id="fermermenu">Fermer <i class="fa fa-remove"></i></button>
-    <a href="https://framacarte.org/fr/map/e-trajet_80731" class="w3-bar-item w3-button">Carte</a>
-    <a href="compte.html" class="w3-bar-item w3-button">Infos personnelles</a>
-    <a href="messages.html" class="w3-bar-item w3-button">Messages</a>
-    <a href="deconnexion.html" class="w3-bar-item w3-button w3-text-gray">Se déconnecter</a>
-  </nav>
-  
   <!-- Header -->
   <header class="w3-container w3-padding" id="myHeader">
-    <span id="ouvrirmenu" class="fa fa-bars w3-xlarge w3-button w3-text-theme w3-display-top-left "></span> 
+    <a href="messages.html"><span id="ouvrirmenu" class="fa fa-bell w3-xlarge w3-button w3-text-theme w3-display-topright "></span></a>
+    <a href="compte.html"><span id="ouvrircompte" class="fa fa-gear w3-xlarge w3-button w3-text-theme w3-display-topleft "></span></a>
     <div class="w3-center">
-      <h1 class="w3-xxxlarge">PROFILS</h1>
+      <p class=""><img src="./images/logo.png" id="imglogo"></p>
+      <h1 class="w3-xxxlarge w3-hide-small">SPORTFRIENDS</h1>
     </div>
   </header>
-  <nav class="w3-margin-left w3-bar-block"><a href="index.html">Accueil</a>>Profils
-  </nav>
   <section id="profils" class="w3-row w3-container w3-center">
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P1" onclick="recupInfosProfil(this.id)">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P1" onclick="recupInfosProfil(this.id)">
     <a href="#" onclick="return false">
-      <img src="./images/profil-768x890.png" alt="P1" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P1" class="logo">
 	  P1
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P2">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P2">
     <a href="#" onclick="return false">
-      <img src="./images/profil-768x890.png" alt="P2" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P2" class="logo ">
 	  P2
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P3" onclick="recupInfosProfil(this.id)">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P3" onclick="recupInfosProfil(this.id)">
     <a href="#">
-      <img src="./images/profil-768x890.png" alt="P3" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P3" class="logo ">
 	  P3
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P4">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P4">
     <a href="profil.php?id=P4">
-      <img src="./images/profil-768x890.png" alt="P4" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P4" class="logo ">
 	  P4
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P5">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P5">
     <a href="profil.php?id=P5">
-      <img src="./images/profil-768x890.png" alt="P5" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P5" class="logo ">
 	  P5
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top profils" id="P6">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border profils" id="P6">
     <a href="#">
-      <img src="./images/profil-768x890.png" alt="P6" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P6" class="logo ">
 	  P6
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top profils" id="P7">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border profils" id="P7">
     <a href="#">
-      <img src="./images/profil-768x890.png" alt="P7" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P7" class="logo ">
 	  P7
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top profils" id="P8">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border profils" id="P8">
     <a href="#">
-      <img src="./images/profil-768x890.png" alt="P8" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P8" class="logo ">
 	  P8
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top profils" id="P9">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border profils" id="P9">
     <a href="#">
-      <img src="./images/profil-768x890.png" alt="P9" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P9" class="logo ">
 	  P9
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top profils" id="P10">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border profils" id="P10">
     <a href="#">
-      <img src="./images/profil-768x890.png" alt="P10" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P10" class="logo ">
 	  P10
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P11">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P11">
     <a href="profil.php?id=P11">
-      <img src="./images/profil-768x890.png" alt="P11" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P11" class="logo ">
 	  P11
     </a>
     </article>
-    <article class="w3-col s4 w3-padding-small w3-margin-top" id="P12">
+    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P12">
     <a href="profil.php?id=P12">
-      <img src="./images/profil-768x890.png" alt="P12" class="logo w3-badge">
+      <img src="./images/profil-768x890.png" alt="P12" class="logo ">
 	  P12
     </a>
     </article>
