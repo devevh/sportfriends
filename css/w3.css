@@ -141,6 +141,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-margin-small{margin:8px!important}
 .w3-margin{margin:16px!important}.w3-margin-top{margin-top:16px!important}.w3-margin-bottom{margin-bottom:16px!important}
 .w3-margin-left{margin-left:16px!important}.w3-margin-right{margin-right:16px!important}
+.w3-margin-32{margin:32px!important}.w3-margin-top-32{margin-top:32px!important}.w3-margin-bottom-32{margin-bottom:32px!important}
+.w3-margin-left-32{margin-left:32px!important}.w3-margin-right-32{margin-right:32px!important}
 .w3-padding-small{padding:4px 8px!important}.w3-padding{padding:8px 16px!important}.w3-padding-large{padding:12px 24px!important}
 .w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
 .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
@@ -243,6 +245,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (min-width:601px){.drapeau{height:40px} .logo{height:200px}}
 @media (max-width:600px){.logo{height:100%;width:100%}}
 .w3-underline{text-decoration:underline;cursor:pointer}
+.w3-a-nounderline{text-decoration:none}
 .w3-padding-bottom-64{padding-bottom:64px!important}.w3-padding-bottom-48{padding-bottom:48px!important}
 .w3-padding-bottom-32{padding-bottom:32px!important}.w3-padding-bottom-24{padding-bottom:24px!important}
 .w3-padding-bottom-16{padding-bottom:16px!important}
