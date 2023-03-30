@@ -17,58 +17,58 @@
     <section id="main">
       <div id="content" class="w3-container">
         <header class="w3-center">
-          <p>Gérer son compte, toujours sans engagement. La modification sera effective pour la prochaine période.</p>
+          <p>Gérer son compte SportFriends</p>
         </header>
         <span id="infoconnexion"></span>
         <form name="formsinscrire" id="formsinscrire" action="./action/inscription.php" method="POST" >  
-          <div class="w3-row-padding">
-          <div class="w3-third-small">
-            <div class="w3-margin-small w3-border-radius w3-light-grey ">
-              <p class="w3-center w3-padding-bottom-16">
-              FREE<br>
-              <b>Publicité</b><br>
-              <input class="w3-radio" type="radio" name="premium" id="free" value="0" required>
-              <label for="free">compte gratuit limité</label>
-              </p>
-              <p class="w3-center "><span class="w3-large">0</span><sup>€/mois</sup></p>
+          <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-third-small">
+              <div class="w3-margin-small w3-border-radius w3-light-grey ">
+                <p class="w3-center w3-padding-bottom-16">
+                FREE<br>
+                <b>Publicité</b><br>
+                <input class="w3-radio" type="radio" name="premium" id="free" value="0" required>
+                <label for="free">compte gratuit limité</label>
+                </p>
+                <p class="w3-center "><span class="w3-large">0</span><sup>€/mois</sup></p>
+              </div>
+            </div>
+            <div class="w3-third-small ">
+              <div class="w3-margin-small w3-border-radius w3-theme-l1">
+                <p class="w3-center w3-padding-bottom-16">BEST<br>
+                <b class="w3-text">Pas de publicité</b><br>
+                <input class="w3-radio" type="radio" name="premium" id="best" value="1" required>
+                <label for="best">compte BEST</label>
+                </p>
+                <p class="w3-center "><span class="w3-large">1,99</span><sup>€/mois</sup></p>
+              </div>
+            </div>
+            <div class="w3-third-small ">
+              <div class="w3-margin-small w3-border-radius w3-theme-d2">
+                <p class="w3-center w3-padding-bottom-16">PREMIUM<br>
+                <b class="w3-text-theme-comp">Pas de publicité</b><br>
+                <input class="w3-radio" type="radio" name="premium" id="premium" value="2" required>
+                <label for="premium">compte PREMIUM <b>sans</b> limite de fonction</label>
+                </p>
+                <p class="w3-center "><span class="w3-large">5,99</span><sup>€/mois</sup></p>
+              </div>
             </div>
           </div>
-          <div class="w3-third-small ">
-            <div class="w3-margin-small w3-border-radius w3-theme-l1">
-              <p class="w3-center w3-padding-bottom-16">BEST<br>
-              <b class="w3-text">Pas de publicité</b><br>
-              <input class="w3-radio" type="radio" name="premium" id="best" value="1" required>
-              <label for="best">compte BEST</label>
-              </p>
-              <p class="w3-center "><span class="w3-large">1,99</span><sup>€/mois</sup></p>
-            </div>
-          </div>
-          <div class="w3-third-small ">
-            <div class="w3-margin-small w3-border-radius w3-theme-d2">
-              <p class="w3-center w3-padding-bottom-16">PREMIUM<br>
-              <b class="w3-text-theme-comp">Pas de publicité</b><br>
-              <input class="w3-radio" type="radio" name="premium" id="premium" value="2" required>
-              <label for="premium">compte PREMIUM <b>sans</b> limite de fonction</label>
-              </p>
-              <p class="w3-center "><span class="w3-large">5,99</span><sup>€/mois</sup></p>
-            </div>
-          </div>
-          </div>
-          <div class="w3-row-padding w3-margin-top"><span id="controle"></span>
-            <div class="w3-col m4 s12 "><span>Sexe</span>
+          <div class="w3-row-padding"><span id="controle"></span>
+            <div class="w3-col m4 s12 w3-margin-bottom"><span>Sexe</span>
             <input class="w3-radio" type="radio" name="sexe" id="f" value="f" required><label for="f">Femme</label>
             <input class="w3-radio" type="radio" name="sexe" id="h" value="h" required><label for="h">Homme</label>
             </div>
-            <div class="w3-col m8 s12"><label for="pseudo">Pseudo</label><input class="w3-input" type="text" name="pseudo" id="pseudo" placeholder="Pseudo" minlength="6" maxlength="20" required></div>
+            <div class="w3-col m8 s12 w3-margin-bottom"><label for="pseudo">Pseudo</label><input class="w3-input" type="text" name="pseudo" id="pseudo" placeholder="Pseudo" minlength="6" maxlength="20" required></div>
           </div>
           <div class="w3-row-padding">
-            <div class="w3-col m6 s12"><label for="prenom">Prénom</label><input class="w3-input" type="text" name="prenom" id="prenom" minlength="3" placeholder="Prénom" required></div>
-            <div class="w3-col m6 s12"><label for="nom">Nom</label><input class="w3-input" type="text" name="nom" id="nom" minlength="4" placeholder="Nom" required></div>
-            <div class="w3-col m6 s12"><label for="telephone">Téléphone</label><input class="w3-input" type="number" name="telephone" id="telephone" minlength="9" placeholder="066010203" required></div>
-            <div class="w3-col m6 s12"><label for="email">Email</label><input class="w3-input" type="email" name="email" id="email" placeholder="mail@exemple.ga"></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="prenom">Prénom</label><input class="w3-input" type="text" name="prenom" id="prenom" minlength="3" placeholder="Prénom" required></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="nom">Nom</label><input class="w3-input" type="text" name="nom" id="nom" minlength="4" placeholder="Nom" required></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="telephone">Téléphone</label><input class="w3-input" type="number" name="telephone" id="telephone" minlength="9" placeholder="066010203" required></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="email">Email</label><input class="w3-input" type="email" name="email" id="email" placeholder="mail@exemple.ga"></div>
           </div>
           <div class="w3-row-padding">
-              <div class="w3-col m6 s12"><label for="abonnement">Abonnement</label>
+              <div class="w3-col m6 s12 w3-margin-bottom"><label for="abonnement">Abonnement</label>
               <select class="w3-input" name="abonnement" id="abonnement" required>
                 <option value="null" selected>Choisir un abonnement</option>
                 <option value="basicfit">Basic fit</option>
@@ -77,7 +77,7 @@
                 <option value="orangebleue">Orange bleue</option>
               </select>
               </div>
-              <div class="w3-col m6 s12"><label for="objectif">Objectif</label>
+              <div class="w3-col m6 s12 w3-margin-bottom"><label for="objectif">Objectif</label>
               <select class="w3-input" name="objectif" id="objectif" required>
                 <option value="null" selected>Choisir un objectif</option>
                 <option value="renforce">renforcement</option>
@@ -90,53 +90,50 @@
               </div>      
           </div>  
           <div class="w3-row-padding">
-            <div class="w3-col m12 s12"><label for="ville">Ville</label><input class="w3-input" type="text" name="ville" id="ville" placeholder="ville" required></div>
+            <div class="w3-col m12 s12 w3-margin-bottom"><label for="ville">Ville</label><input class="w3-input" type="text" name="ville" id="ville" placeholder="ville" required></div>
           </div>
           <div class="w3-row-padding">
-            <div class="w3-col m1 w3-margin-1em w3-center"><a href="#reponse"><i class="fa fa-eye" id="voir"></i></a></div>
-            <div class="w3-col m5"><label for="mdp1">Mot de passe</label><input class="w3-input" type="password" name="mdp1" id="mdp1" minlength="4" required></div>
-            <div class="w3-col m1 w3-margin-1em w3-center"><i id="checkmdp" class='' ></i></div>
-            <div class="w3-col m5"><label for="mdp2">Confirmation</label><input class="w3-input" type="password" name="mdp2" id="mdp2" minlength="4" required></div>
-          </div>
-          <div class="w3-col m12"><input type="checkbox" name="chk_consentementGV" id="chk_consentementGV">
-            <label> En cochant cette case, vous reconnaissez explicitement avoir lu les <a href='cg.html' target='_blank'>conditions générales</a>, notamment vos droits d'accès et de suppression de vos données personnelles conformément à la règlementation en vigueur.</label>
-          </div>
-          <div class="w3-col m12 w3-margin-top w3-center">
-            <input type="submit" class="w3-button w3-theme" name="btn_inscription" id="btn_inscription" value="S'inscrire" disabled>
-            <input type="reset" class="w3-button w3-theme-comp" value="Annuler">
+		    <div class="w3-col m6 s12 w3-margin-bottom"><label for="mdp1">Mot de passe&nbsp;<a href="#reponse"><i class="fa fa-eye" id="voir"></i></a></label><input class="w3-input" type="password" name="mdp1" id="mdp1" minlength="4" required></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="mdp2">Confirmation&nbsp;<i id="checkmdp" class='' ></i></label><input class="w3-input" type="password" name="mdp2" id="mdp2" minlength="4" required></div>
+            <div class="w3-col m12 w3-margin-top w3-margin-bottom w3-center">
+              <input type="submit" class="w3-button w3-theme" name="btn_inscription" id="btn_inscription" value="Mettre à jour">
+            </div>
           </div>
         </form>
           <!-- uploade photo-->
-        <div class="w3-row-padding"><span>Photo de profil (image jpg ou png, taille entre 30ko et 2Mo) </span>
+        <div class="w3-row-padding w3-margin-top">
         <span id="infoUploade"></span>
           <form enctype='multipart/form-data' id='form_profil' method='POST' action='uploade.php'>
-              <div class="w3-col m12 w3-margin-top w3-center">
+              <div class="w3-col m12 w3-margin-bottom w3-center"><span>Photo de profil (jpg ou png, 2Mo max) </span>
 			    <input type="hidden" name="pseudoprofil" id="pseudoprofil" value="<?php echo $SESpseudo; ?>">
                 <input type="hidden" name="MAX_FILE_SIZE" value="2000000">
                 <input name="userfile" type="file" class="w3-input">
 			  </div>
-              <div class="w3-col m12 w3-margin-top w3-center">
+              <div class="w3-col m12 w3-margin-bottom w3-center">
 			    <input type="submit" class="w3-button w3-theme" name="btn_enregistreravatar" id="btn_enregistreravatar" value="Enregistrer">
 		      </div>
           </form>
         </div>
       </div>
     </section>
-    
-    <!-- Footer -->
-    <footer class="">
-    </footer>
-    <!-- div menu -->
-    <nav id="menufixe" class="menufixebas">
-      <article class="w3-col s3"><a href="profils.html"><i class="fa fa-users"></i></a>
-      </article>
-      <article class="w3-col s3"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map"></i></a>
-      </article>
-      <article class="w3-col s3"><a href="messages.html"><i class="fa fa-message"></i></a>
-      </article>
-      <article class="w3-col s3"><a href="rechercheprofil.html"><i class="fa fa-search"></i></a>
-      </article>
-    </nav>
+  <!-- Footer -->
+  <footer class="w3-margin-top w3-padding-32">
+  </footer>
+  <!-- div menu -->
+  <nav id="menufixe" class="menufixebas w3-text-theme">
+    <article class="w3-col s1 w3-text-white">.</article>
+    <article class="w3-col s2"><a href="profils.html"><i class="fa fa-border-all"></i></a>
+    </article>
+    <article class="w3-col s2"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map-location-dot"></i></a>
+    </article>
+    <article class="w3-col s2"><a href="accueil.html"><i class="fa fa-home"></i></a>
+    </article>
+    <article class="w3-col s2"><a href="messages.html"><i class="fa fa-comments"></i></a>
+    </article>
+    <article class="w3-col s2"><a href="compte.html"><i class="fa fa-user"></i></a>
+    </article>
+    <article class="w3-col s1 w3-text-white">.</article>
+  </nav>
     <script src="./js/gestionmdp.js"></script>
     <script src="./js/inscription.js"></script>
     <script src="./js/compte.js"></script>

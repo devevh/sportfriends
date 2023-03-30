@@ -103,6 +103,15 @@
           </div>
           <div class="w3-row-padding">
             <div class="w3-col m12 s12 w3-margin-bottom"><label for="description">Description</label><textarea class="w3-input" name="description" id="description" placeholder="quelques mots de présentation" required></textarea></div>
+            <div class="w3-col m12 s12 w3-margin-bottom">
+			  <label for="tags">Tags<b id="ajouterTags" onclick="alert('clic pour ajouter le tag')">&nbsp;+</b></label><input class="w3-input" type="text" name="tags" id="tags" placeholder="mots clés">
+			</div>
+			<div class="w3-col m12 s12 w3-margin-bottom">
+			  <p id="listeTags">
+			    <span class="w3-border-radius w3-theme-l1" id="compte1tag1">tag1<i class="fa fa-circle-xmark" onclick="alert('clic pour supprimer le tag')"></i></span>
+			    <span class="w3-border-radius w3-theme-l1" id="compte1tag2">tag2<i class="fa fa-circle-xmark" onclick="alert('clic pour supprimer le tag')"></i></span>
+		      </p>
+            </div>
           </div>
           <!-- uploade photo-->
 		<!--
@@ -120,23 +129,21 @@
           </form>
         </div>
 		-->
-          <div class="w3-col m12"><input type="checkbox" name="chk_consentementGV" id="chk_consentementGV">
+          <div class="w3-row-padding">
+          <div class="w3-col m12 w3-margin-bottom"><input type="checkbox" name="chk_consentementGV" id="chk_consentementGV">
             <label> En cochant cette case, vous reconnaissez explicitement avoir lu les <a href='cg.html' target='_blank'>conditions générales</a>.</label>
           </div>
-          <div class="w3-col m12 w3-margin-top w3-center">
+          <div class="w3-col m12 w3-center w3-margin-bottom">
             <input type="submit" class="w3-button w3-theme" name="btn_inscription" id="btn_inscription" value="S'inscrire" disabled>
             <input type="reset" class="w3-button w3-theme-comp" value="Annuler">
           </div>
+        </div>
         </form>
       </div>
     </div>
     
     <!-- Footer -->
-    <footer class="w3-container w3-padding-64">
-      <div style="position:relative;bottom:5px;" class="w3-tooltip w3-right">
-        <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
-        <a class="w3-text-theme" href="#myHeader"><span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span></a>
-      </div>
+    <footer class="w3-padding-32">
     </footer>
     <script src="./js/gestionmdp.js"></script>
     <script src="./js/inscription.js"></script>
