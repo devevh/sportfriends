@@ -11,8 +11,8 @@
   <body>
   <!-- Header -->
   <header class="w3-container w3-padding" id="myHeader">
-    <a href="messages.html"><span id="ouvrirmenu" class="fa fa-bell w3-xlarge w3-button w3-text-theme w3-display-topright "></span></a>
-    <a href="compte.html"><span id="ouvrircompte" class="fa fa-gear w3-xlarge w3-button w3-text-theme w3-display-topleft "></span></a>
+    <a href="messages.html"><span id="ouvrirmenu" class="fa fa-bell w3-xlarge w3-text-theme w3-margin-small w3-display-topright "></span></a>
+    <a href="compte.html"><span id="ouvrircompte" class="fa fa-gear w3-xlarge w3-text-theme w3-margin-small w3-display-topleft "></span></a>
     <div class="w3-center">
       <p class=""><img src="./images/logo.png" id="imglogo"></p>
       <h1 class="w3-xxxlarge w3-hide-small">SPORTFRIENDS</h1>
@@ -29,7 +29,7 @@
       </div>
     </section>
 	<!-- creer un evenement-->
-    <div class="" id="listeprofils" style="overflow:scroll;width:1000%">
+    <div class="" id="listeprofils" >
       <div class=" w3-left w3-margin-left" id="P1">P1</div>
       <div class=" w3-left w3-margin-left" id="P2">P2</div>
       <div class=" w3-left w3-margin-left" id="P3">P3</div>
@@ -56,55 +56,18 @@
     <hr>
   </section>
   <!-- Footer -->
-  <footer class="w3-container w3-padding-32">
-    <div style="position:relative;bottom:5px;" class="w3-tooltip w3-right">
-      <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
-      <a class="w3-text-theme" href="#myHeader"><span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span></a>
-    </div>
+  <footer class="">
   </footer>
   <!-- div menu -->
-  <nav id="menufixe" class="menufixebas">
-    <article class="w3-col s2"><a href="rechercheprofil.html"><i class="fa fa-search"></i></a>
+  <nav id="menufixe" class="menufixebas w3-text-theme">
+    <article class="w3-col s3"><a href="profils.html"><i class="fa fa-users"></i></a>
     </article>
-    <article class="w3-col s2"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map"></i></a>
+    <article class="w3-col s3"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map"></i></a>
     </article>
-    <article class="w3-col s2"><a href="profils.html"><i class="fa fa-users"></i></a>
+    <article class="w3-col s3"><a href="messages.html"><i class="fa fa-message"></i></a>
     </article>
-    <article class="w3-col s2"><a href="compte.html"><i class="fa fa-user-circle"></i></a>
+    <article class="w3-col s3"><a href="rechercheprofil.html"><i class="fa fa-search"></i></a>
     </article>
-    <article class="w3-col s2"><a href="messages.html"><i class="fa fa-message"></i></a>
-    </article>
-    <article class="w3-col s2"><a href="partenaires.html"><i class="fa fa-cart-shopping"></i></a>
-    </article>    
   </nav>
-  <!-- modale formulaire pour se connecter -->
-  <div id="modaleConnecter" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1"> 
-          <h2>Se connecter</h2>
-          <span id="fermerConnecter" class="w3-button w3-display-topright">×</span>
-      </header>
-      <!-- pour afficher les messages -->
-      <span id="infoconnexion"></span>
-      <!--  -->
-      <form name="seconnecter" id="seconnecter" action="./action/connexion.php" method="POST" class="w3-container">
-        <div class="w3-section">      
-          <input type="text" class="w3-input" name="pseudo" id="pseudo" size="20" required placeholder="pseudo, mail ou telephone" autofocus />
-          <!--<label>Identifiant</label>-->
-        </div>
-        <div class="w3-section">
-          <input type="password" class="w3-input" name="motdepasse" id="motdepasse" size="20" required minlength="4" placeholder="Mot de passe" />
-          <!--<label>Mot de passe</label>-->
-        </div>
-        <div class="w3-section">
-          <input type="submit" class="w3-button w3-theme" name="btn_connexion" id="btn_connexion" value="Je me connecte">
-          <input type="reset" class="w3-button w3-theme-comp" value="Annuler">
-        </div>
-      </form>
-      <footer class="w3-container w3-theme-l1">
-        <p><a href="./reinit_mdp.html">Mot de passe oublié</a> - <a href="./inscription.html">S'inscrire</a></p>
-      </footer>
-    </div>
-  </div>
   </body>
 </html>

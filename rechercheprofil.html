@@ -13,20 +13,10 @@
     <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
   </head>
   <body>
-    <!-- Side Navigation -->
-    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide" id="mySidebar">
-      <button class="w3-bar-item w3-button" id="fermermenu">Fermer <i class="fa fa-remove"></i></button>
-      <a href="index.html" class="w3-bar-item w3-button w3-text-theme">Accueil</a>
-      <a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198" class="w3-bar-item w3-button">Carte</a>
-      <a href="compte.html" class="w3-bar-item w3-button">Infos personnelles</a>
-      <a href="messages.html" class="w3-bar-item w3-button">Messages</a>
-      <a href="deconnexion.html" class="w3-bar-item w3-button w3-text-gray">Se déconnecter</a>
-    </nav>
     <!-- Header -->
     <header class="w3-container w3-padding" id="myHeader">
-      <i class="fa fa-bars w3-xlarge w3-button w3-text-theme w3-display-top-left" name="sandwich" id="ouvrirmenu"></i>
       <div class="w3-center">
-        <p class="w3-animate-bottom"><img src="./images/logo.png" class="" id="imglogo"></p>
+        <p class=""><img src="./images/logo.png" class="" id="imglogo"></p>
         <h3 class="w3-text-theme w3-padding-top-24"><b>Chercher par affinités</b></h3>
       </div>
     </header>
@@ -38,12 +28,12 @@
         </header>
         <span id="infoconnexion"></span>
         <form name="formrechercheprofil" id="formrechercheprofil" action="./action/rechercheprofil.php" method="POST" > 
-          <div class="w3-row-padding w3-margin-top">
-            <div class="w3-col m6 s12"><span>Sexe</span>
-              <input class="w3-radio" type="radio" name="sexe" id="f" value="f"><label for="f">Femme</label>
-              <input class="w3-radio" type="radio" name="sexe" id="h" value="h"><label for="h">Homme</label>
+          <div class="w3-row-padding">
+            <div class="w3-col m6 s12 w3-margin-top"><span class="w3-margin-left">Sexe</span>
+              <input class="w3-radio w3-margin-left" type="radio" name="sexe" id="f" value="f" required><label for="f">Femme</label>
+              <input class="w3-radio w3-margin-left" type="radio" name="sexe" id="h" value="h" required><label for="h">Homme</label>
             </div>
-            <div class="w3-col m6 s12"><label for="age">Age</label>
+            <div class="w3-col m6 s12 w3-margin-top"><label for="age">Age</label>
               <select class="w3-input" name="age" id="age">
                 <option value="0" selected>age</option>
                 <option value="d18a29">18 - 29</option>
@@ -55,10 +45,10 @@
             </div>
           </div>
           <div class="w3-row-padding">
-            <div class="w3-col m12 s12"><label for="ville">Ville</label><input class="w3-input" type="text" name="ville" id="ville" placeholder="ville"></div>
+            <div class="w3-col m12 s12 w3-margin-top"><label for="ville">Ville</label><input class="w3-input" type="text" name="ville" id="ville" placeholder="ville"></div>
           </div>
           <div class="w3-row-padding">
-              <div class="w3-col m6 s12"><label for="abonnement" class="w3-tooltip">Abonnement *<em class="w3-text w3-small">Les champs avec * sont obligatoires.</em></label>
+            <div class="w3-col m6 s12 w3-margin-top"><label for="abonnement" class="w3-tooltip">Abonnement *<em class="w3-text w3-small">Les champs avec * sont obligatoires.</em></label>
               <select class="w3-input" name="abonnement" id="abonnement" required>
                 <option value="null" selected>Choisir un abonnement</option>
                 <option value="basicfit">Basic fit</option>
@@ -66,8 +56,8 @@
                 <option value="neoness">Neoness</option>
                 <option value="orangebleue">Orange bleue</option>
               </select>
-              </div>
-              <div class="w3-col m6 s12"><label for="objectif">Objectif</label>
+            </div>
+            <div class="w3-col m6 s12 w3-margin-top"><label for="objectif">Objectif</label>
               <select class="w3-input" name="objectif" id="objectif">
                 <option value="null" selected>Choisir un objectif</option>
                 <option value="renforce">renforcement</option>
@@ -77,23 +67,16 @@
                 <option value="activite">activité sportive</option>
                 <option value="lien">lien social</option>
               </select>
-              </div>
-          </div>
-          <div class="w3-col m12 w3-margin-top w3-center">
-            <input type="submit" class="w3-button w3-theme" name="btn_recherche" id="btn_recherche" value="Chercher">
-            <input type="reset" class="w3-button w3-theme-comp" value="Annuler">
+            </div>
+            <div class="w3-col m12 w3-margin-top w3-center">
+              <input type="submit" class="w3-button w3-theme" name="btn_recherche" id="btn_recherche" value="Chercher">
+            </div>
           </div>
         </form>
       </div>
     </div>
     <!-- Footer -->
-    <footer class="w3-container w3-padding-64">
-      <div style="position:relative;bottom:5px;" class="w3-tooltip w3-right">
-        <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
-        <a class="w3-text-theme" href="#myHeader"><span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span></a>
-      </div>
+    <footer class="">
     </footer>
-    <script src="./app.js"></script>
-    <script src="./js/w3.js"></script>
   </body>
 </html>
