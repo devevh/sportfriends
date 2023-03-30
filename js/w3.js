@@ -57,12 +57,3 @@ function move() {
 }
 
 function quitter() { window.close();}
-
-//*******************************************************************************************
-//   ajout des gestionnaires d'evenements pour l'application 
-// afin de coller à Content Security Policy qui interdit les appels de fonction dans le code
-//*******************************************************************************************
-//clic sur le sandwich pour ouvrir le menu
-document.getElementById('ouvrirmenu').addEventListener('click', w3_open);
-//clic sur la croix pour fermer le menu
-document.getElementById('fermermenu').addEventListener('click', w3_close);
