@@ -14,45 +14,58 @@
     <a href="compte.html"><span id="ouvrircompte" class="fa fa-gear w3-xlarge w3-text-theme w3-margin-small w3-display-topleft "></span></a>
     <a href="messages.html"><span id="ouvrirmenu" class="fa fa-bell w3-xlarge w3-text-theme w3-margin-small w3-display-topright "></span></a>
     <div class="w3-center">
-      <p class=""><img src="./images/logo.png" id="imglogo"></p>
+      <img src="./images/logo_bandeau.png" id="imglogo">
       <h1 class="w3-xxxlarge w3-hide-small">SPORTFRIENDS</h1>
     </div>
   </header>
-  <section class="w3-row-padding" id="main">
+  <section class="w3-container w3-row-padding" id="main">
     <!-- evenements : liste horizontale avec débordement -->
     <article class="w3-row " id="evenements">
       <h2>Evenements/Invitations</h2>
-      <div class="w3-card-4 w3-left w3-margin-left">
-        evt1
-      </div>
-      <div class="w3-card-4 w3-left w3-margin-left">
-        evt1
-      </div>
-      <div class="w3-card-4 w3-left w3-margin-left">
-        evt1
-      </div>
-    </article>
-	<!-- creer un evenement-->
-    <article class="w3-row-padding" id="creerEvt">
-	  <form>
-	    <h2>Créer un evenement/une invitation</h3>
+	  <div class="liste_scrollable">
+      <div class="w3-border-radius w3-margin-left">
 	    <p>Titre</p>
 		<p>Lieu</p>
 		<p>Date et heure</p>
+      </div>
+      <div class="w3-border-radius w3-margin-left">
+	    <p>Titre</p>
+		<p>Lieu</p>
+		<p>Date et heure</p>
+      </div>
+      <div class="w3-border-radius w3-margin-left">
+	    <p>Titre</p>
+		<p>Lieu</p>
+		<p>Date et heure</p>
+      </div>
+	  </div>
+    </article>
+	<!-- creer un evenement-->
+    <article class="w3-row-padding" id="creerEvt">
+	  <p onclick="furtivite('formcreerevt')">Créer un evenement / une invitation (+)</p>
+	  <form id="formcreerevt" action="" method="POST" class="w3-hide">
+	    <!--<label for="titreevt">Titre</label>--><input type="text" id="titreevt" class="w3-input" placeholder="titre">
+	    <!--<label for="titreevt">Titre</label>--><input type="text" id="lieuevt" class="w3-input" placeholder="lieu">
+	    <!--<label for="titreevt">Titre</label>--><input type="date" id="dateevt" class="w3-input">
+	    <!--<label for="titreevt">Titre</label>--><input type="submit" id="creerevt" class="w3-button w3-theme" value="Créer">
 	  </form>
     </article>
-    <hr>
     <!-- partenaires  : liste horizontale avec débordement -->
-    <article class="w3-row-padding" id="partenaires">
+    <article class="w3-row" id="partenaires">
       <h2>Partenaires</h2>
-      <div class="w3-card-4 w3-left w3-margin-left">
-        evt1
-      </div>
-      <div class="w3-card-4 w3-left w3-margin-left">
-        evt1
-      </div>
-      <div class="w3-card-4 w3-left w3-margin-left">
-        evt1
+	  <div class="liste_scrollable">
+        <div class="w3-border-radius w3-margin-left">
+          <p>Logo partenaire</p>
+		  <p>Marque partenaire</p>
+        </div>
+        <div class="w3-border-radius w3-margin-left">
+          <p>Logo partenaire</p>
+		  <p>Marque partenaire</p>
+        </div>
+        <div class="w3-border-radius w3-margin-left">
+          <p>Logo partenaire</p>
+		  <p>Marque partenaire</p>
+        </div>
       </div>
     </article>
     <hr>
@@ -71,9 +84,19 @@
     </article>
     <article class="w3-col s2"><a href="messages.html"><i class="fa fa-comments"></i></a>
     </article>
-    <article class="w3-col s2"><a href="compte.html"><i class="fa fa-user"></i></a>
+    <article class="w3-col s2"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
     </article>
     <article class="w3-col s1 w3-text-white">.</article>
   </nav>
+  <script>
+function furtivite(id) {
+  let x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+  </script>
   </body>
 </html>

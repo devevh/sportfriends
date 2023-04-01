@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <title>Accueil SPORTFRIENDS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/w3.css" type="text/css">
+    <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
+    <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+  </head>
+  <body>
+  <!-- Header -->
+  <header class="w3-container w3-padding" id="myHeader">
+    <a href="compte.html"><span id="ouvrircompte" class="fa fa-gear w3-xlarge w3-text-theme w3-margin-small w3-display-topleft "></span></a>
+    <a href="messages.html"><span id="ouvrirmenu" class="fa fa-bell w3-xlarge w3-text-theme w3-margin-small w3-display-topright "></span></a>
+    <div class="w3-center">
+      <img src="./images/logo_bandeau.png" id="imglogo">
+    </div>
+  </header>
+  <section class="w3-row-padding w3-center" id="main">
+    <article class="w3-row w3-center w3-margin-bottom" id="modifavatar">
+	  <img src="./images/profil-768x890.png" alt="Pseudo" id="imgavatar" class="w3-badge" onclick="document.getElementById('id01').style.display='block'">
+    </article>
+	<a href="compte.html" class="w3-a-nounderline"><article class="w3-col m12 s12 w3-bar-block w3-theme w3-margin-bottom w3-padding">
+	  <p class="w3-large"><b>modifier mon profil</b></p>
+	</article></a>
+	<a href="abonnement.html" class="w3-a-nounderline"><article class="w3-col m12 s12 w3-bar-block w3-theme  w3-margin-bottom w3-padding">
+	  <p class="w3-large"><b>abonnement SportFriends +</b></p>
+	</article></a>
+  </section>
+  <!-- Footer -->
+  <footer class="">
+  </footer>
+  <!-- div menu -->
+  <nav id="menufixe" class="menufixebas w3-text-theme">
+    <article class="w3-col s1 w3-text-white">.</article>
+    <article class="w3-col s2"><a href="profils.html"><i class="fa fa-border-all"></i></a>
+    </article>
+    <article class="w3-col s2"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map-location-dot"></i></a>
+    </article>
+    <article class="w3-col s2"><a href="accueil.html"><i class="fa fa-home"></i></a>
+    </article>
+    <article class="w3-col s2"><a href="messages.html"><i class="fa fa-comments"></i></a>
+    </article>
+    <article class="w3-col s2"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
+    </article>
+    <article class="w3-col s1 w3-text-white">.</article>
+  </nav>
+  <!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+		<p>header</p>
+      </header>
+      <div class="w3-row-padding">
+        <span id="infoUploade"></span>
+          <form enctype='multipart/form-data' id='form_profil' method='POST' action='uploade.php'>
+              <div class="w3-col m12 w3-margin-bottom w3-center"><span>Photo de profil (jpg ou png, 2Mo max) </span>
+			    <input type="hidden" name="pseudoprofil" id="pseudoprofil" value="pseudo">
+                <input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+                <input name="userfile" type="file" class="w3-input">
+			  </div>
+              <div class="w3-col m12 w3-margin-bottom w3-center">
+			    <input type="submit" class="w3-button w3-theme" name="btn_enregistreravatar" id="btn_enregistreravatar" value="Enregistrer">
+		      </div>
+          </form>
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        <p>footer</p>
+      </footer>
+    </div>
+</div>
+  </body>
+</html>

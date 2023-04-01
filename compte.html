@@ -13,47 +13,22 @@
     <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
   </head>
   <body>
+  <!-- Header -->
+  <header class="w3-container w3-padding" id="myHeader">
+    <a href="compte.html"><span id="ouvrircompte" class="fa fa-gear w3-xlarge w3-text-theme w3-margin-small w3-display-topleft "></span></a>
+    <div class="w3-center">
+      <img src="./images/logo_bandeau.png" id="imglogo">
+      <h1 class="w3-xxxlarge w3-hide-small">SPORTFRIENDS</h1>
+    </div>
+  </header>
     <!-- Main -->
     <section id="main">
       <div id="content" class="w3-container">
         <header class="w3-center">
-          <p>Gérer son compte SportFriends</p>
+          <p>Gérer son profil SportFriends</p>
         </header>
         <span id="infoconnexion"></span>
-        <form name="formsinscrire" id="formsinscrire" action="./action/inscription.php" method="POST" >  
-          <div class="w3-row-padding w3-margin-bottom">
-            <div class="w3-third-small">
-              <div class="w3-margin-small w3-border-radius w3-light-grey ">
-                <p class="w3-center w3-padding-bottom-16">
-                FREE<br>
-                <b>Publicité</b><br>
-                <input class="w3-radio" type="radio" name="premium" id="free" value="0" required>
-                <label for="free">compte gratuit limité</label>
-                </p>
-                <p class="w3-center "><span class="w3-large">0</span><sup>€/mois</sup></p>
-              </div>
-            </div>
-            <div class="w3-third-small ">
-              <div class="w3-margin-small w3-border-radius w3-theme-l1">
-                <p class="w3-center w3-padding-bottom-16">BEST<br>
-                <b class="w3-text">Pas de publicité</b><br>
-                <input class="w3-radio" type="radio" name="premium" id="best" value="1" required>
-                <label for="best">compte BEST</label>
-                </p>
-                <p class="w3-center "><span class="w3-large">1,99</span><sup>€/mois</sup></p>
-              </div>
-            </div>
-            <div class="w3-third-small ">
-              <div class="w3-margin-small w3-border-radius w3-theme-d2">
-                <p class="w3-center w3-padding-bottom-16">PREMIUM<br>
-                <b class="w3-text-theme-comp">Pas de publicité</b><br>
-                <input class="w3-radio" type="radio" name="premium" id="premium" value="2" required>
-                <label for="premium">compte PREMIUM <b>sans</b> limite de fonction</label>
-                </p>
-                <p class="w3-center "><span class="w3-large">5,99</span><sup>€/mois</sup></p>
-              </div>
-            </div>
-          </div>
+        <form name="formsinscrire" id="formsinscrire" action="./action/majprofil.php" method="POST">
           <div class="w3-row-padding"><span id="controle"></span>
             <div class="w3-col m4 s12 w3-margin-bottom"><span>Sexe</span>
             <input class="w3-radio" type="radio" name="sexe" id="f" value="f" required><label for="f">Femme</label>
@@ -100,24 +75,10 @@
             </div>
           </div>
         </form>
-          <!-- uploade photo-->
-        <div class="w3-row-padding w3-margin-top">
-        <span id="infoUploade"></span>
-          <form enctype='multipart/form-data' id='form_profil' method='POST' action='uploade.php'>
-              <div class="w3-col m12 w3-margin-bottom w3-center"><span>Photo de profil (jpg ou png, 2Mo max) </span>
-			    <input type="hidden" name="pseudoprofil" id="pseudoprofil" value="<?php echo $SESpseudo; ?>">
-                <input type="hidden" name="MAX_FILE_SIZE" value="2000000">
-                <input name="userfile" type="file" class="w3-input">
-			  </div>
-              <div class="w3-col m12 w3-margin-bottom w3-center">
-			    <input type="submit" class="w3-button w3-theme" name="btn_enregistreravatar" id="btn_enregistreravatar" value="Enregistrer">
-		      </div>
-          </form>
-        </div>
       </div>
     </section>
   <!-- Footer -->
-  <footer class="w3-margin-top w3-padding-32">
+  <footer class="w3-padding-32">
   </footer>
   <!-- div menu -->
   <nav id="menufixe" class="menufixebas w3-text-theme">
@@ -130,7 +91,7 @@
     </article>
     <article class="w3-col s2"><a href="messages.html"><i class="fa fa-comments"></i></a>
     </article>
-    <article class="w3-col s2"><a href="compte.html"><i class="fa fa-user"></i></a>
+    <article class="w3-col s2"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
     </article>
     <article class="w3-col s1 w3-text-white">.</article>
   </nav>
