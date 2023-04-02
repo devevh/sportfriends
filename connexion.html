@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html lang="fr">
   <head>
-    <title>Front SPORTFRIENDS</title>
+    <title>Connexion SPORTFRIENDS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/w3.css" type="text/css">
@@ -23,8 +23,10 @@
           <input type="text" class="w3-input" name="pseudo" id="pseudo" size="20" placeholder="pseudo, mail" autofocus>
           <!--<label>Identifiant</label>-->
         </section>
-        <section class="w3-section w3-bar-block ">
-          <input type="password" class="w3-input" name="motdepasse" id="motdepasse" size="20" minlength="4" placeholder="Mot de passe" >
+        <section class="w3-section w3-bar-block conteneur-flex">
+          <input type="password" class="w3-input" name="mdp1" id="mdp1" size="20" minlength="4" placeholder="Mot de passe"><div class="affiche_flex_droite"><i class="fa fa-eye" id="voir" ></i></div>
+        <!--<section class="w3-section w3-bar-block ">
+          <input type="password" class="w3-input" name="motdepasse" id="motdepasse" size="20" minlength="4" placeholder="Mot de passe">-->
           <!--<label>Mot de passe</label>-->
         </section>
         <section class="w3-section w3-bar-block ">
@@ -41,5 +43,8 @@
 	  <p class="w3-xlarge w3-bold"></p>
     </footer>
   </section>
+    <script src="./voirmdp.js"></script>
+    <script src="./app.js"></script>
+    <script src="./js/w3.js"></script>
   </body>
 </html>

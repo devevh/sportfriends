@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-  <title>SPORTFRIENDS</title>
+  <title>Messages SPORTFRIENDS</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/w3.css" type="text/css">
@@ -20,80 +20,119 @@
   <section id="messages">
     <!-- Header -->
     <header class="w3-container w3-padding w3-center">
-        <h1 class="w3-xxxlarge ">MESSAGES</h1>
+        <h3>Mes messages</h3>
     </header>
-    <a href="message.html">
-    <article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
-      <div class="w3-row w3-container">
-      <div class="w3-col s11">
-        <h4>Profil 1 </h4>
-      </div>
-      <div class="w3-col s1">
-        <h2>&gt;</h2>
-      </div>
+    <!-- liste des pseudo en cours de conversation : liste horizontale avec débordement -->
+    <article class="w3-row-padding w3-margin-bottom" id="conversations">
+	  <div class="liste_scrollable">
+        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_1234-abcd-1234-abcd" onclick="afficheConversation(this.id)">
+	      <p>Avatar</p>
+		  <p>Brian</p>
+		  <p class="w3-small"><i>Statut</i></p>
+        </div>
+        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_5678-efgh-5678-efgh" onclick="afficheConversation(this.id)">
+	      <p>Avatar</p>
+		  <p>Lorem</p>
+		  <p class="w3-small"><i>Statut</i></p>
+        </div>
+        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
+	      <p>Avatar</p>
+		  <p>Pseudo</p>
+		  <p class="w3-small"><i>Statut</i></p>
+        </div>
+        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
+	      <p>Avatar</p>
+		  <p>Pseudo</p>
+		  <p class="w3-small"><i>Statut</i></p>
+        </div>
+        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
+	      <p>Avatar</p>
+		  <p>Pseudo</p>
+		  <p class="w3-small"><i>Statut</i></p>
+        </div>
+        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
+	      <p>Avatar</p>
+		  <p>Pseudo</p>
+		  <p class="w3-small"><i>Statut</i></p>
+        </div>
+	  </div>
+    </article>
+	<!-- affichage de la conversation en cours -->
+    <article class="w3-row-padding " id="box_conversation_en_cours">
+      <div class="w3-col w3-border-radius" id="contenu_box_conversation_en_cours">
+	    <article class="conversation w3-show" id="0">
+		  <p><i>Clic sur la tuile pour afficher la conversation</i></p>
+		</article>
+        <!-- conversation 1234-abcd-1234-abcd -->
+        <article class="conversation w3-hide" id="1234-abcd-1234-abcd">
+          <p class="w3-theme-comp-d3 message_emis" id="1234-abcd-1234-abcd-1">
+          Hello world !<br>
+		  how are you this morning ?<br>
+		  Hope you're fine, for me it is an incredible day...
+          </p>
+          <p class="w3-theme message_recu" id="1234-abcd-1234-abcd-2">
+          sjimlgf  zejjqlgm qùrtg ùrgjk rqekùgkqeù ùqerkg mjkgqjkmg ùqjkerù gjjqrgj ùjqrgj ùjaergjiqùgl,n  ...
+          </p>
+          <p class="w3-theme-comp-d3 message_emis" id="1234-abcd-1234-abcd-1">
+          Hello world !<br>
+		  how are you this morning ?<br>
+		  Hope you're fine, for me it is an incredible day...
+          </p>
+          <p class="w3-theme message_recu" id="1234-abcd-1234-abcd-2">
+          sjimlgf  zejjqlgm qùrtg ùrgjk rqekùgkqeù ùqerkg mjkgqjkmg ùqjkerù gjjqrgj ùjqrgj ùjaergjiqùgl,n
+          </p>
+          <p class="w3-theme-comp-d3 message_emis" id="1234-abcd-1234-abcd-1">
+          Hello world !<br>
+		  how are you this morning ?<br>
+		  Hope you're fine, for me it is an incredible day...
+          </p>
+          <p class="w3-theme message_recu" id="1234-abcd-1234-abcd-2">
+          <span>sjimlgf  zejjqlgm qùrtg ùrgjk rqekùgkqeù ùqerkg mjkgqjkmg ùqjkerù gjjqrgj ùjqrgj ùjaergjiqùgl,n  ...</span>
+          </p>
+        </article>
+        <!-- conversation 5678-efgh-5678-efgh -->
+        <article class="conversation w3-hide" id="5678-efgh-5678-efgh">
+          <p class="w3-theme-comp-d3 message_emis" id="5678-efgh-5678-efgh-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p class="w3-theme message_recu" id="5678-efgh-5678-efgh-2">
+          <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</span>
+          </p>
+        </article>
       </div>
     </article>
-    </a>
-    <article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
-      <div class="w3-row w3-container">
-      <div class="w3-col s11">
-        <h4>Profil 2 </h4>
+	<!-- affichage de la conversation en cours -->
+	<article>
+	<form id="envoie_message" action="" method="POST">
+	  <div class="w3-row-padding">
+	    <div class="w3-col m12 s12 conteneur-flex">
+	      <input type="hidden" class="" id="ajout_message_conversation" name="ajout_message_conversation" value="0">
+	      <input type="text" class="w3-input" id="texte_message" name="texte_message" placeholder="message" value="" required>
+		  <div class="affiche_flex_droite"><i class="fa fa-paper-plane w3-text-theme" id="texte_envoie" onclick="envoie_message.php"></i></div>
       </div>
-      <div class="w3-col s1">
-        <h2>&gt;</h2>
-      </div>
-      </div>
-    </article>
-    <article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
-      <div class="w3-row w3-container">
-      <div class="w3-col s11">
-        <h4>Profil 3 </h4>
-      </div>
-      <div class="w3-col s1">
-        <h2>&gt;</h2>
-      </div>
-      </div>
-    </article>
-    <article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
-      <div class="w3-row w3-container">
-      <div class="w3-col s11">
-        <h4>Profil 4 </h4>
-      </div>
-      <div class="w3-col s1">
-        <h2>&gt;</h2>
-      </div>
-      </div>
-    </article>
-    <article class="w3-border-bottom" id="1234-abcd-1234-abcd-1234">
-      <div class="w3-row w3-container">
-      <div class="w3-col s11">
-        <h4>Profil 5 </h4>
-      </div>
-      <div class="w3-col s1">
-        <h2>&gt;</h2>
-      </div>
-      </div>
+	</form>
     </article>
   </section>
   <!-- Footer -->
   <footer class="w3-padding-32">
   </footer>
   <!-- div menu -->
-  <nav id="menufixe" class="menufixebas w3-text-theme">
+  <nav id="menufixe" class="menufixebas">
     <article class="w3-col s1 w3-text-white">.</article>
-    <article class="w3-col s2"><a href="profils.html"><i class="fa fa-border-all"></i></a>
+    <article class="w3-col s2 w3-text-theme-comp"><a href="profils.html"><i class="fa fa-border-all"></i></a>
     </article>
-    <article class="w3-col s2"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map-location-dot"></i></a>
+    <article class="w3-col s2 w3-text-theme-comp"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map-location-dot"></i></a>
     </article>
-    <article class="w3-col s2"><a href="accueil.html"><i class="fa fa-home"></i></a>
+    <article class="w3-col s2 w3-text-theme-comp"><a href="accueil.html"><i class="fa fa-home"></i></a>
     </article>
-    <article class="w3-col s2"><a href="messages.html"><i class="fa fa-comments"></i></a>
+    <article class="w3-col s2 w3-text-theme"><a href="messages.html"><i class="fa fa-comments"></i></a>
     </article>
-    <article class="w3-col s2"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
+    <article class="w3-col s2 w3-text-theme-comp"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
     </article>
     <article class="w3-col s1 w3-text-white">.</article>
   </nav>
   <script src="./app.js"></script>
   <script src="./js/w3.js"></script>
+  <script src="./js/messages.js"></script>
   </body>
 </html>

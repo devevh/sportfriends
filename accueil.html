@@ -42,7 +42,7 @@
     </article>
 	<!-- creer un evenement-->
     <article class="w3-row-padding" id="creerEvt">
-	  <p onclick="furtivite('formcreerevt')">Créer un evenement / une invitation (+)</p>
+	  <p onclick="furtivite('formcreerevt')">Créer un evenement / une invitation <i class="fa fa-arrow-down" id="gererAffichage_formcreerevt"></i></p>
 	  <form id="formcreerevt" action="" method="POST" class="w3-hide">
 	    <!--<label for="titreevt">Titre</label>--><input type="text" id="titreevt" class="w3-input" placeholder="titre">
 	    <!--<label for="titreevt">Titre</label>--><input type="text" id="lieuevt" class="w3-input" placeholder="lieu">
@@ -74,29 +74,24 @@
   <footer class="w3-padding-32">
   </footer>
   <!-- div menu -->
-  <nav id="menufixe" class="menufixebas w3-text-theme">
-    <article class="w3-col s1 w3-text-white">.</article>
-    <article class="w3-col s2"><a href="profils.html"><i class="fa fa-border-all"></i></a>
+  <nav id="menufixe" class="menufixebas">
+    <!--<article class="w3-col s1 w3-text-white">.</article>-->
+    <article class="w3-col s2 w3-text-grey"><a href="deconnexion.php"><i class="fa fa-power-off"></i></a>
+	</article>
+    <article class="w3-col s2 w3-text-theme-comp"><a href="profils.html"><i class="fa fa-border-all"></i></a>
     </article>
-    <article class="w3-col s2"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map-location-dot"></i></a>
+    <article class="w3-col s2 w3-text-theme-comp"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map-location-dot"></i></a>
     </article>
-    <article class="w3-col s2"><a href="accueil.html"><i class="fa fa-home"></i></a>
+    <article class="w3-col s2 w3-text-theme"><a href="accueil.html"><i class="fa fa-home"></i></a>
     </article>
-    <article class="w3-col s2"><a href="messages.html"><i class="fa fa-comments"></i></a>
+    <article class="w3-col s2 w3-text-theme-comp"><a href="messages.html"><i class="fa fa-comments"></i></a>
     </article>
-    <article class="w3-col s2"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
+    <article class="w3-col s2 w3-text-theme-comp"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
     </article>
-    <article class="w3-col s1 w3-text-white">.</article>
+    <!--<article class="w3-col s1 w3-text-white">.</article>-->
   </nav>
-  <script>
-function furtivite(id) {
-  let x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-  </script>
+  <script src="./js/accueil.js"></script>
+  <script src="./js/w3.js"></script>
+  <script src="./app.js"></script>
   </body>
 </html>
