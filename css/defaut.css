@@ -1,0 +1,18 @@
+/* fondamentales */
+
+body,header, footer{background-color:rgb(222, 222, 223)}
+div,p,span,section,article,form,td{background-color:rgb(255, 255, 255)}
+footer p{background-color:rgb(222, 222, 223)}
+header p{background-color:rgb(222, 222, 223)}
+input[type="submit"]{background-color:rgb(222, 222, 223);color:rgb(0,0,0)}
+.tag{background-color:rgb(222, 222, 223);color:rgb(0,0,0)}
+#profils{background-color:rgb(222, 222, 223)}
+#modifavatar{background-color:rgb(222, 222, 223)}
+#infoconnexion{background-color:rgb(222, 222, 223)}
+#main{background-color:rgb(222, 222, 223)}
+#ouvrircompte{color:rgb(0,0,0)}
+#ouvrirmenu{color:rgb(0,0,0)}
+.abonnement{background-color:rgb(222, 222, 223)}
+.menufixebas{color:rgb(0,0,0);background-color:rgb(222, 222, 223)}
+.visible{color:rgb(0,0,0);background-color:rgb(222, 222, 223)}
+.invisible{background-color:rgb(222, 222, 223);color:rgb(222, 222, 223)}
