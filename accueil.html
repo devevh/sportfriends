@@ -7,88 +7,84 @@
     <link rel="stylesheet" href="./css/w3.css" type="text/css">
     <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
     <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+	<link rel="stylesheet" href="./css/defaut.css" type="text/css" id="mode">
   </head>
+  <script src="./js/cookie.js"></script>
   <body>
   <!-- Header -->
-  <header class="w3-container w3-padding" id="myHeader">
-    <a href="compte.html"><span id="ouvrircompte" class="fa fa-gear w3-xlarge w3-text-theme w3-margin-small w3-display-topleft "></span></a>
-    <a href="messages.html"><span id="ouvrirmenu" class="fa fa-bell w3-xlarge w3-text-theme w3-margin-small w3-display-topright "></span></a>
-    <div class="w3-center">
-      <img src="./images/logo_bandeau.png" id="imglogo">
-      <h1 class="w3-xxxlarge w3-hide-small">SPORTFRIENDS</h1>
-    </div>
+  <header class="w3-container w3-padding w3-center" id="myHeader">
+    <a href="macrocompte.html"><i id="ouvrircompte" class="fa fa-gear w3-xlarge w3-margin-small w3-display-topleft "></i></a>
+    <a href="messages.html"><i id="ouvrirmenu" class="fa fa-bell w3-xlarge w3-margin-small w3-display-topright "></i></a>
+    <img src="./images/logo_bandeau.png" id="imglogo">
   </header>
-  <section class="w3-container w3-row-padding" id="main">
+  <!--<section class="w3-container w3-margin" id="main">-->
     <!-- evenements : liste horizontale avec débordement -->
-    <article class="w3-row " id="evenements">
-      <h2>Evenements/Invitations</h2>
+    <article class="w3-container w3-margin w3-padding-bottom-16" id="evenements">
+      <h3>Evenements/Invitations</h3>
 	  <div class="liste_scrollable">
-      <div class="w3-border-radius w3-margin-left">
+      <article class="w3-border-radius w3-margin-left">
 	    <p>Titre</p>
 		<p>Lieu</p>
 		<p>Date et heure</p>
-      </div>
-      <div class="w3-border-radius w3-margin-left">
+      </article>
+      <article class="w3-border-radius w3-margin-left">
 	    <p>Titre</p>
 		<p>Lieu</p>
 		<p>Date et heure</p>
-      </div>
-      <div class="w3-border-radius w3-margin-left">
+      </article>
+      <article class="w3-border-radius w3-margin-left">
 	    <p>Titre</p>
 		<p>Lieu</p>
 		<p>Date et heure</p>
-      </div>
+      </article>
 	  </div>
     </article>
 	<!-- creer un evenement-->
-    <article class="w3-row-padding" id="creerEvt">
-	  <p onclick="furtivite('formcreerevt')">Créer un evenement / une invitation <i class="fa fa-arrow-down" id="gererAffichage_formcreerevt"></i></p>
-	  <form id="formcreerevt" action="" method="POST" class="w3-hide">
+    <article class="w3-container w3-margin w3-padding-bottom-16" id="creerEvt">
+	  <p onclick="furtivite('formcreerevt')">Créer un evenement / une invitation <i class="fa fa-arrow-up" id="gererAffichage_formcreerevt"></i></p>
+	  <form id="formcreerevt" action="" method="POST" class="w3-center w3-show">
 	    <!--<label for="titreevt">Titre</label>--><input type="text" id="titreevt" class="w3-input" placeholder="titre">
 	    <!--<label for="titreevt">Titre</label>--><input type="text" id="lieuevt" class="w3-input" placeholder="lieu">
 	    <!--<label for="titreevt">Titre</label>--><input type="date" id="dateevt" class="w3-input">
-	    <!--<label for="titreevt">Titre</label>--><input type="submit" id="creerevt" class="w3-button w3-theme" value="Créer">
+	    <!--<label for="titreevt">Titre</label>--><input type="submit" id="creerevt" class="w3-button" value="Créer">
 	  </form>
     </article>
     <!-- partenaires  : liste horizontale avec débordement -->
-    <article class="w3-row" id="partenaires">
-      <h2>Partenaires</h2>
+    <article class="w3-container w3-margin w3-padding-bottom-16" id="partenaires">
+      <h3>Partenaires</h3>
 	  <div class="liste_scrollable">
-        <div class="w3-border-radius w3-margin-left">
+        <article class="w3-border-radius w3-margin-left">
           <p>Logo partenaire</p>
 		  <p>Marque partenaire</p>
-        </div>
-        <div class="w3-border-radius w3-margin-left">
+        </article>
+        <article class="w3-border-radius w3-margin-left">
           <p>Logo partenaire</p>
 		  <p>Marque partenaire</p>
-        </div>
-        <div class="w3-border-radius w3-margin-left">
+        </article>
+        <article class="w3-border-radius w3-margin-left">
           <p>Logo partenaire</p>
 		  <p>Marque partenaire</p>
-        </div>
+        </article>
       </div>
     </article>
-    <hr>
-  </section>
+  <!--</section>-->
   <!-- Footer -->
   <footer class="w3-padding-32">
   </footer>
   <!-- div menu -->
   <nav id="menufixe" class="menufixebas">
-    <article class="w3-col s1 w3-text-white">.</article>
-    <!--<article class="w3-col s2 w3-text-grey"><a href="deconnexion.php"><i class="fa fa-power-off"></i></a>
-	</article>-->
-    <article class="w3-col s2 w3-text-theme-comp"><a href="profils.html"><i class="fa fa-border-all"></i></a>
+    <article class="w3-col s1 invisible">.</article>
+    <article class="w3-col s2 visible"><a href="profils.html"><i class="fa fa-border-all"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map-location-dot"></i></a>
+    <article class="w3-col s2 visible"><a href="carte.html"><i class="fa fa-map-location-dot"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme"><a href="accueil.html"><i class="fa fa-home"></i></a>
+    <article class="w3-col s2 visible"><a href="accueil.html"><i class="fa fa-home"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="messages.html"><i class="fa fa-comments"></i></a>
+    <article class="w3-col s2 visible"><a href="messages.html"><i class="fa fa-comments"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
+    <article class="w3-col s2 visible"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
     </article>
-    <article class="w3-col s1 w3-text-white">.</article>
+    <article class="w3-col s1 invisible">.</article>
   </nav>
   <script src="./js/accueil.js"></script>
   <script src="./js/w3.js"></script>

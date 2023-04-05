@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="./css/w3.css" type="text/css">
     <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
     <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+	<link rel="stylesheet" href="./css/defaut.css" type="text/css" id="mode">
   </head>
   <body>
+  <script src="./js/cookie.js"></script>
+  <body>
     <!-- Header -->
-    <header class="w3-container w3-padding">
-      <div class="w3-center">
+    <header class="w3-container w3-padding w3-center">
         <p class=""><img src="./images/logo.png" class="" id="imglogo"></p>
-        <h3 class="w3-text-theme w3-padding-top-24"><b>Inscription</b></h3>
-      </div>
+        <h3 class="w3-padding-top-24"><b>Inscription</b></h3>
     </header>
     <!-- Main -->
-    <div id="main">
-      <div id="content" class="w3-container">
+    <div id="main" class="w3-container">
         <header class="w3-center">
           <p></p>
         </header>
@@ -73,8 +73,8 @@
 			</div>
 			<div class="w3-col m12 s12 w3-margin-bottom">
 			  <p id="listeTags">
-			    <span class="w3-border-radius w3-theme-l1" id="compte1tag1">tag1<i class="fa fa-circle-xmark" onclick="alert('clic pour supprimer le tag')"></i></span>
-			    <span class="w3-border-radius w3-theme-l1" id="compte1tag2">tag2<i class="fa fa-circle-xmark" onclick="alert('clic pour supprimer le tag')"></i></span>
+			    <span class="w3-border-radius tag" id="compte1tag1">tag1<i class="fa fa-circle-xmark tag" onclick="alert('clic pour supprimer le tag')"></i></span>
+			    <span class="w3-border-radius tag" id="compte1tag2">tag2<i class="fa fa-circle-xmark tag" onclick="alert('clic pour supprimer le tag')"></i></span>
 		      </p>
             </div>
           </div>
@@ -83,12 +83,11 @@
             <label> En cochant cette case, vous reconnaissez explicitement avoir lu les <a href='cg.html' target='_blank'>conditions générales</a>.</label>
           </div>
           <div class="w3-col m12 w3-center w3-margin-bottom">
-            <input type="submit" class="w3-button w3-theme" name="btn_inscription" id="btn_inscription" value="S'inscrire" disabled>
-            <input type="reset" class="w3-button w3-theme-comp" value="Annuler">
+            <input type="submit" class="w3-button" name="btn_inscription" id="btn_inscription" value="S'inscrire" disabled>
+            <input type="reset" class="w3-button" value="Annuler">
           </div>
         </div>
         </form>
-      </div>
     </div>
     
     <!-- Footer -->

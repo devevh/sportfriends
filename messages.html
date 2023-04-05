@@ -7,59 +7,54 @@
   <link rel="stylesheet" href="./css/w3.css" type="text/css">
   <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
   <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+	<link rel="stylesheet" href="./css/defaut.css" type="text/css" id="mode">
   </head>
+  <script src="./js/cookie.js"></script>
   <body>
   <!-- Header -->
-  <header class="w3-container w3-padding" id="myHeader">
-    <a href="compte.html"><span id="ouvrircompte" class="fa fa-gear w3-xlarge w3-button w3-text-theme w3-display-topleft "></span></a>
-    <div class="w3-center">
+  <header class="w3-container w3-padding w3-center" id="myHeader">
+    <a href="macrocompte.html"><i id="ouvrircompte" class="fa fa-gear w3-xlarge w3-margin-small w3-display-topleft"></i></a>
       <img src="./images/logo_bandeau.png" id="imglogo">
-      <h1 class="w3-xxxlarge w3-hide-small">SPORTFRIENDS</h1>
-    </div>
+      <h3>Mes messages</h3>
   </header>
-  <section id="messages" class="w3-section">
-    <!-- Header -->
-    <header class="w3-container w3-padding w3-center">
-        <h3>Mes messages</h3>
-    </header>
     <!-- liste des pseudo en cours de conversation : liste horizontale avec débordement -->
-    <article class="w3-row-padding w3-margin-bottom" id="conversations">
+    <section class="w3-margin w3-padding-16" id="conversations">
 	  <div class="liste_scrollable">
-        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_1234-abcd-1234-abcd" onclick="afficheConversation(this.id)">
+        <article class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_1234-abcd-1234-abcd" onclick="afficheConversation(this.id)">
 	      <p>Avatar</p>
 		  <p>Brian</p>
 		  <p class="w3-small"><i>Statut</i></p>
-        </div>
-        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_5678-efgh-5678-efgh" onclick="afficheConversation(this.id)">
+        </article>
+        <article class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_5678-efgh-5678-efgh" onclick="afficheConversation(this.id)">
 	      <p>Avatar</p>
 		  <p>Lorem</p>
 		  <p class="w3-small"><i>Statut</i></p>
-        </div>
-        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
+        </article>
+        <article class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
 	      <p>Avatar</p>
 		  <p>Pseudo</p>
 		  <p class="w3-small"><i>Statut</i></p>
-        </div>
-        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
+        </article>
+        <article class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
 	      <p>Avatar</p>
 		  <p>Pseudo</p>
 		  <p class="w3-small"><i>Statut</i></p>
-        </div>
-        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
+        </article>
+        <article class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
 	      <p>Avatar</p>
 		  <p>Pseudo</p>
 		  <p class="w3-small"><i>Statut</i></p>
-        </div>
-        <div class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
+        </article>
+        <article class="w3-round-xlarge w3-border w3-margin-left item_conversation" id="conversation_0" onclick="afficheConversation(this.id)">
 	      <p>Avatar</p>
 		  <p>Pseudo</p>
 		  <p class="w3-small"><i>Statut</i></p>
-        </div>
+        </article>
 	  </div>
-    </article>
+    </section>
 	<!-- affichage de la conversation en cours -->
-    <article class="w3-row-padding w3-margin-bottom" id="box_conversation_en_cours">
-      <div class="w3-col w3-border-radius" id="contenu_box_conversation_en_cours">
+    <section class="w3-margin w3-container" id="box_conversation_en_cours">
+      <div class="w3-col " id="contenu_box_conversation_en_cours">
 	    <article class="conversation w3-show" id="0">
 		  <p><i>Clic sur la tuile pour afficher la conversation</i></p>
 		</article>
@@ -87,7 +82,7 @@
 		  Hope you're fine, for me it is an incredible day...
           </p>
           <p class="w3-theme message_recu" id="1234-abcd-1234-abcd-2">
-          <span>sjimlgf  zejjqlgm qùrtg ùrgjk rqekùgkqeù ùqerkg mjkgqjkmg ùqjkerù gjjqrgj ùjqrgj ùjaergjiqùgl,n  ...</span>
+          sjimlgf  zejjqlgm qùrtg ùrgjk rqekùgkqeù ùqerkg mjkgqjkmg ùqjkerù gjjqrgj ùjqrgj ùjaergjiqùgl,n
           </p>
         </article>
         <!-- conversation 5678-efgh-5678-efgh -->
@@ -96,40 +91,38 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <p class="w3-theme message_recu" id="5678-efgh-5678-efgh-2">
-          <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</span>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
           </p>
         </article>
       </div>
-    </article>
+    </section>
 	<!-- affichage de la conversation en cours -->
-	<article class="w3-margin-bottom-32 w3-padding-bottom-64" id="box_envoie_message">
+	<section class="w3-margin w3-container " id="box_envoie_message">
 	<form id="envoie_message" action="" method="POST">
-	  <div class="w3-row-padding">
 	    <div class="w3-col m12 s12 conteneur-flex">
 	      <input type="hidden" class="" id="ajout_message_conversation" name="ajout_message_conversation" value="0">
-	      <input type="text" class="w3-input" id="texte_message" name="texte_message" placeholder="message" value="" required>
-		  <div class="affiche_flex_droite"><i class="fa fa-paper-plane w3-text-theme" id="texte_envoie" onclick="envoie_message.php"></i></div>
-      </div>
+	      <input type="text" class="w3-input" id="texte_message" name="texte_message" placeholder="message" value="">
+		  <div class="affiche_flex_droite"><i class="fa fa-paper-plane" id="texte_envoie" onclick="envoie_message.php"></i></div>
+        </div>
 	</form>
-    </article>
-  </section>
+    </section>
   <!-- Footer -->
-  <footer class="w3-margin-top w3-padding-bottom-64">
+  <footer class="w3-padding-48">
   </footer>
   <!-- div menu -->
   <nav id="menufixe" class="menufixebas">
-    <article class="w3-col s1 w3-text-white">.</article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="profils.html"><i class="fa fa-border-all"></i></a>
+    <article class="w3-col s1 invisible">.</article>
+    <article class="w3-col s2 visible"><a href="profils.html"><i class="fa fa-border-all"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map-location-dot"></i></a>
+    <article class="w3-col s2 visible"><a href="carte.html"><i class="fa fa-map-location-dot"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="accueil.html"><i class="fa fa-home"></i></a>
+    <article class="w3-col s2 visible"><a href="accueil.html"><i class="fa fa-home"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme"><a href="messages.html"><i class="fa fa-comments"></i></a>
+    <article class="w3-col s2 visible"><a href="messages.html"><i class="fa fa-comments"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
+    <article class="w3-col s2 visible"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
     </article>
-    <article class="w3-col s1 w3-text-white">.</article>
+    <article class="w3-col s1 invisible">.</article>
   </nav>
   <script src="./app.js"></script>
   <script src="./js/w3.js"></script>

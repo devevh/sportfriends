@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="./css/w3.css" type="text/css">
     <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
     <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+	<link rel="stylesheet" href="./css/defaut.css" type="text/css" id="mode">
   </head>
+  <script src="./js/cookie.js"></script>
   <body>
-  <section class="w3-container w3-center" id="main">
+  <section class="w3-row w3-margin w3-center" id="main">
     <header class="w3-padding-top-64 w3-padding-bottom-64">
       <p class=""><img src="./images/logo.png" id="imglogo"></p>
       <h1 class="w3-xxxlarge w3-hide-small">SPORTFRIENDS</h1>
 	</header>
-	<a href="inscription.html" class="w3-a-nounderline"><article class="w3-bar-block w3-theme w3-margin-32 w3-margin-bottom-32 w3-padding">
-	  <p class="w3-large"><b>INSCRIPTION</b></p>
-	</article></a>
-	<a href="connexion.html" class="w3-a-nounderline"><article class="w3-bar-block w3-theme w3-margin-32 w3-margin-bottom-32 w3-padding">
-	  <p class="w3-large"><b>CONNEXION</b></p>
-	</article></a>
+	<article class="w3-col m12 s12 w3-bar-block w3-margin-bottom w3-padding" id="inscription.html" onclick="window.location.assign(this.id)">
+	  <p class="w3-large"><b>1ère connexion</b></p>
+	</article>
+	<article class="w3-col m12 s12 w3-bar-block w3-margin-bottom w3-padding" id="connexion.html" onclick="window.location.assign(this.id)">
+	  <p class="w3-large"><b>login</b></p>
+	</article>
     <!-- Footer -->
-    <footer class="w3-container w3-margin-32">
-	  <p class="w3-xlarge w3-bold">No more excuses to procrastinate, do it differently.</p>
+    <footer class="w3-margin-top w3-padding-32">
+	  <p class="w3-large"><b>Phrase d'accroche</b></p>
     </footer>
   </section>
   </body>

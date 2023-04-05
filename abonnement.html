@@ -11,72 +11,65 @@
     <link rel="stylesheet" href="./css/w3.css" type="text/css">
     <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
     <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
-	<style type="text/css">
-.ratio {aspect-ratio:1/2}
-
-	</style>
+	<link rel="stylesheet" href="./css/defaut.css" type="text/css" id="mode">
   </head>
+  <script src="./js/cookie.js"></script>
   <body>
   <!-- Header -->
-  <header class="w3-container w3-padding" id="myHeader">
-    <a href="compte.html"><span id="ouvrircompte" class="fa fa-gear w3-xlarge w3-text-theme w3-margin-small w3-display-topleft "></span></a>
-    <div class="w3-center">
+  <header class="w3-container w3-padding w3-center" id="myHeader">
+    <a href="compte.html"><i id="ouvrircompte" class="fa fa-gear w3-xlarge w3-margin-small w3-display-topleft "></i></a>
       <img src="./images/logo_bandeau.png" id="imglogo">
-      <h1 class="w3-xxxlarge w3-hide-small">SPORTFRIENDS</h1>
-    </div>
   </header>
     <!-- Main -->
-    <section id="colonnes">
-      <div class="w3-container">
+    <section class="w3-margin abonnement" id="colonnes">
         <header class="w3-center">
-          <p>Gérer son abonnement SportFriends</p>
+          <p class=" abonnement">Gérer son abonnement SportFriends</p>
         </header>
         <span id="infoconnexion"></span>
-        <form name="formmajabo" id="formmajabo" action="./action/majabonnement.php" method="POST" >  
-          <div>
-            <div class="w3-third-small">
-              <div class="w3-border-radius w3-theme-l3 ratio">
-                <p class="w3-center w3-padding-bottom-16">FREE<br><b>compte gratuit limité avec publicité</b></p>
-                <p class="w3-center" ><span class="w3-large">0</span><sup>€/mois</sup></p>
+		<article class="w3-row abonnement">
+        <!--<form name="formmajabo" id="formmajabo" action="./action/majabonnement.php" method="POST" ></form>-->
+            <div class="w3-third-small abonnement w3-padding-small">
+              <div class="w3-border-radius ratio ">
+                <p class="w3-center w3-padding-bottom-16">FREE<br><b>compte gratuit publicité</b></p>
+                <p class="w3-center"><span class="w3-large">0</span><sup>€/mois</sup></p>
               </div>
             </div>
-            <div class="w3-third-small">
-              <div class="w3-border-radius w3-theme ratio">
+            <div class="w3-third-small abonnement w3-padding-small">
+              <div class="w3-border-radius ratio ">
                 <p class="w3-center w3-padding-bottom-16">BEST<br>
                 <b class="w3-text">Pas de publicité</b><br>
                 </p>
                 <p class="w3-center" ><span class="w3-large">1,99</span><sup>€/mois</sup></p>
               </div>
             </div>
-            <div class="w3-third-small">
-              <div class="w3-border-radius w3-theme-d3 ratio">
+            <div class="w3-third-small abonnement w3-padding-small">
+              <div class="w3-border-radius ratio">
                 <p class="w3-center w3-padding-bottom-16">PREMIUM<br>
                 <b class="w3-text-theme-comp">Pas de publicité</b><br>
                 </p>
                 <p class="w3-center" ><span class="w3-large">5,99</span><sup>€/mois</sup></p>
               </div>
             </div>
-          </div>
+		  </article>
     </section>
-    <section id="lignes">
-      <div class="w3-container">
+    <section id="lignes" class="w3-margin">
         <header class="w3-center">
-          <p>Affichage en lignes</p>
+          <p class=" abonnement">Affichage en lignes</p>
         </header>
         <span id="infoconnexion2"></span>
-        <form name="formmajabo" id="formmajabo" action="./action/majabonnement.php" method="POST" >  
-          <div class="w3-row-padding">
-            <div class="w3-col m12 s12 w3-theme-l3 w3-margin-bottom">
+        <form name="formmajabo" id="formmajabo" action="./action/majabonnement.php" method="POST" ></form>
+          <div class="w3-row abonnement">
+            <div class="w3-col m12 s12 w3-margin-bottom">
               <p class="w3-center w3-padding-bottom-16">FREE<br><b>compte gratuit limité avec publicité</b></p>
               <p class="w3-center"><span class="w3-large">0</span><sup>€/mois</sup></p>
             </div>
-            <div class="w3-col m12 s12 w3-theme w3-margin-bottom">
+            <div class="w3-col m12 s12 w3-margin-bottom">
               <p class="w3-center w3-padding-bottom-16">BEST<br>
               <b class="w3-text">Pas de publicité, limité</b><br>
               </p>
               <p class="w3-center"><span class="w3-large">1,99</span><sup>€/mois</sup></p>
             </div>
-            <div class="w3-col m12 s12 w3-theme-d3 w3-margin-bottom">
+            <div class="w3-col m12 s12 w3-margin-bottom">
               <p class="w3-center w3-padding-bottom-16">PREMIUM<br>
               <b class="w3-text-theme-comp">Pas de publicité, full service</b><br>
               </p>
@@ -89,18 +82,18 @@
   </footer>
   <!-- div menu -->
   <nav id="menufixe" class="menufixebas">
-    <article class="w3-col s1 w3-text-white">.</article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="profils.html"><i class="fa fa-border-all"></i></a>
+    <article class="w3-col s1 invisible">.</article>
+    <article class="w3-col s2 visible"><a href="profils.html"><i class="fa fa-border-all"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map-location-dot"></i></a>
+    <article class="w3-col s2 visible"><a href="carte.html"><i class="fa fa-map-location-dot"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="accueil.html"><i class="fa fa-home"></i></a>
+    <article class="w3-col s2 visible"><a href="accueil.html"><i class="fa fa-home"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="messages.html"><i class="fa fa-comments"></i></a>
+    <article class="w3-col s2 visible"><a href="messages.html"><i class="fa fa-comments"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
+    <article class="w3-col s2 visible"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
     </article>
-    <article class="w3-col s1 w3-text-white">.</article>
+    <article class="w3-col s1 invisible">.</article>
   </nav>
     <script src="./js/compte.js"></script>
     <script src="./app.js"></script>

@@ -7,153 +7,72 @@
   <link rel="stylesheet" href="./css/w3.css" type="text/css">
   <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
   <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+	<link rel="stylesheet" href="./css/defaut.css" type="text/css" id="mode">
   </head>
+  <script src="./js/cookie.js"></script>
   <body>
   <!-- Header -->
-  <header class="w3-container w3-padding" id="myHeader">
-    <a href="compte.html"><span id="ouvrircompte" class="fa fa-gear w3-xlarge w3-button w3-text-theme w3-display-topleft "></span></a>
-    <a href="rechercheprofil.html"><span id="ouvrirrecherche" class="fa fa-sliders w3-xlarge w3-button w3-text-theme w3-display-topright "></span></a>
-    <div class="w3-center">
+  <header class="w3-container w3-padding w3-center" id="myHeader">
+    <a href="macrocompte.html"><i id="ouvrircompte" class="fa fa-gear w3-xlarge w3-margin-small w3-display-topleft "></i></a>
+    <a href="rechercheprofil.html"><i id="ouvrirrecherche" class="fa fa-sliders w3-xlarge w3-margin-small w3-display-topright "></i></a>
       <img src="./images/logo_bandeau.png" id="imglogo">
-      <h1 class="w3-xxxlarge w3-hide-small">SPORTFRIENDS</h1>
-    </div>
   </header>
-  <section id="profils" class="w3-row w3-container w3-center">
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P1" onclick="recupInfosProfil(this.id)">
-    <a href="#" onclick="return false">
+  <table class="w3-margin w3-center" style="border-spacing:10px" id="profils">
+  <tr>
+    <td id="P1" onclick="recupInfosProfil(this.id)"><a href="#" class="w3-a-nounderline" onclick="return false">
       <img src="./images/profil-768x890.png" alt="P1" class="logo">
 	  P1
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P2">
-    <a href="#" onclick="return false">
+    </a></td>
+	<td id="P2" onclick="recupInfosProfil(this.id)"> <a href="#" class="w3-a-nounderline" onclick="return false">
       <img src="./images/profil-768x890.png" alt="P2" class="logo ">
 	  P2
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P3" onclick="recupInfosProfil(this.id)">
-    <a href="#">
-      <img src="./images/profil-768x890.png" alt="P3" class="logo ">
+    </a></td>
+  </tr>
+  <tr>
+    <td id="P1" onclick="recupInfosProfil(this.id)"><a href="#" class="w3-a-nounderline" onclick="return false">
+      <img src="./images/profil-768x890.png" alt="P3" class="logo">
 	  P3
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P4">
-    <a href="profil.php?id=P4">
+    </a></td>
+	<td id="P2" onclick="recupInfosProfil(this.id)"> <a href="#" class="w3-a-nounderline" onclick="return false">
       <img src="./images/profil-768x890.png" alt="P4" class="logo ">
 	  P4
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P5">
-    <a href="profil.php?id=P5">
-      <img src="./images/profil-768x890.png" alt="P5" class="logo ">
+    </a></td>
+  </tr>
+  <tr>
+    <td id="P1" onclick="recupInfosProfil(this.id)"><a href="#" class="w3-a-nounderline" onclick="return false">
+      <img src="./images/profil-768x890.png" alt="P5" class="logo">
 	  P5
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border profils" id="P6">
-    <a href="#">
+    </a></td>
+	<td id="P2" onclick="recupInfosProfil(this.id)"> <a href="#" class="w3-a-nounderline" onclick="return false">
       <img src="./images/profil-768x890.png" alt="P6" class="logo ">
 	  P6
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border profils" id="P7">
-    <a href="#">
-      <img src="./images/profil-768x890.png" alt="P7" class="logo ">
-	  P7
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border profils" id="P8">
-    <a href="#">
-      <img src="./images/profil-768x890.png" alt="P8" class="logo ">
-	  P8
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border profils" id="P9">
-    <a href="#">
-      <img src="./images/profil-768x890.png" alt="P9" class="logo ">
-	  P9
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border profils" id="P10">
-    <a href="#">
-      <img src="./images/profil-768x890.png" alt="P10" class="logo ">
-	  P10
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P11">
-    <a href="profil.php?id=P11">
-      <img src="./images/profil-768x890.png" alt="P11" class="logo ">
-	  P11
-    </a>
-    </article>
-    <article class="w3-col s6 w3-padding-small w3-margin-top w3-border" id="P12">
-    <a href="profil.php?id=P12">
-      <img src="./images/profil-768x890.png" alt="P12" class="logo ">
-	  P12
-    </a>
-    </article>
-  </section>
+    </a></td>
+  </tr>
+  </table>
   <!-- Footer -->
   <footer class="w3-margin-top w3-padding-32">
   </footer>
   <!-- div menu -->
   <nav id="menufixe" class="menufixebas">
-    <article class="w3-col s1 w3-text-white">.</article>
-    <article class="w3-col s2 w3-text-theme"><a href="profils.html"><i class="fa fa-border-all"></i></a>
+    <article class="w3-col s1 invisible">.</article>
+    <article class="w3-col s2 visible"><a href="profils.html"><i class="fa fa-border-all"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="http://umap.openstreetmap.fr/fr/map/sportfriends_886198"><i class="fa fa-map-location-dot"></i></a>
+    <article class="w3-col s2 visible"><a href="carte.html"><i class="fa fa-map-location-dot"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="accueil.html"><i class="fa fa-home"></i></a>
+    <article class="w3-col s2 visible"><a href="accueil.html"><i class="fa fa-home"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="messages.html"><i class="fa fa-comments"></i></a>
+    <article class="w3-col s2 visible"><a href="messages.html"><i class="fa fa-comments"></i></a>
     </article>
-    <article class="w3-col s2 w3-text-theme-comp"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
+    <article class="w3-col s2 visible"><a href="macrocompte.html"><i class="fa fa-user"></i></a>
     </article>
-    <article class="w3-col s1 w3-text-white">.</article>
+    <article class="w3-col s1 invisible">.</article>
   </nav>
-  <!-- modale afficher le profil -->
-  <div id="modaleAfficherProfil" class="w3-modal">
-    <div id="contenuModaleProfil" class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1 w3-center"> 
-        <h2>Pseudo</h2>
-        <span id="fermerAfficherProfil" class="w3-button w3-display-topright">×</span>
-      </header>
-      <!-- pour afficher les messages -->
-      <span id="infoAfficherProfil"></span>
-	  <section id="AfficherProfil" class="w3-row w3-center">
-	    <div class="w3-col w3-padding-large">
-		  <img src="./images/profil-768x890.png" alt="Pseudo" class="logo w3-badge">
-		</div>
-      <!-- age, sexe, ville, abonnement, objectif -->
-	    <div class="w3-col s4">
-		  <p>Age</p>
-		</div>
-	    <div class="w3-col s4">
-		  <p>Sexe</p>
-		</div>
-	    <div class="w3-col s4">
-		  <p>Ville</p>
-		</div>
-	    <div class="w3-col s6">
-		  <p>Abonnement</p>
-		</div>
-	    <div class="w3-col s6">
-		  <p>Objectif</p>
-		</div>
-	  </section>
-      <footer class="w3-container w3-theme-l1 w3-center">
-        <p>
-		  <a href="./message.html">Message</a> <!--
-		  - <a href="./masquerprofil.html">Masquer</a> -->
-		</p>
-      </footer>
-    </div>
-  </div>
   <!-- modale afficher le profil -->
   <div id="modaleAfficherProfilP1" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1 w3-center"> 
+      <header class="w3-container w3-center"> 
         <h2>Pseudo P1</h2>
-        <span id="fermerAfficherProfilP1" class="w3-button w3-display-topright">×</span>
+        <span id="fermerAfficherProfilP1" class="w3-button w3-display-topright w3-xlarge"><b>×</b></span>
       </header>
       <!-- pour afficher les messages -->
       <span id="infoAfficherProfilP1"></span>
@@ -178,9 +97,9 @@
 		  <p>Objectif</p>
 		</div>
 	  </section>
-      <footer class="w3-container w3-theme-l1 w3-center">
+      <footer class="w3-container w3-center">
         <p>
-		  <a href="./message.html">Message</a> <!--
+		  <a href="./messages.html">Message</a> <!--
 		  - <a href="./masquerprofil.html">Masquer</a> -->
 		</p>
       </footer>
@@ -189,7 +108,7 @@
   <!-- modale afficher le profil -->
   <div id="modaleAfficherProfilP2" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1 w3-center"> 
+      <header class="w3-container w3-center"> 
         <h2>Pseudo P2</h2>
         <span id="fermerAfficherProfilP2" class="w3-button w3-display-topright">×</span>
       </header>
@@ -216,7 +135,7 @@
 		  <p>Objectif</p>
 		</div>
 	  </section>
-      <footer class="w3-container w3-theme-l1 w3-center">
+      <footer class="w3-container w3-center">
         <p>
 		  <a href="./message.html">Message</a> <!--
 		  - <a href="./masquerprofil.html">Masquer</a> -->
