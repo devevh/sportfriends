@@ -1,34 +1,35 @@
 <!DOCTYPE HTML>
 <html lang="fr">
-<head>
-<title>Réinitialiser le mot de passe</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="./images/favicon.ico">
-<link rel="apple-touch-icon" href="./images/icones/logo.png">
-<link rel="stylesheet" href="./css/w3.css">
-<link rel="stylesheet" href="./css/w3-theme-bleu.css">
-<link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+ <head>
+  <title>Réinitialiser le mot de passe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <link rel="apple-touch-icon" href="./images/icones/logo.png">
+  <link rel="stylesheet" href="./css/w3.css">
+  <link rel="stylesheet" href="./css/w3-theme-bleu.css">
+  <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+  <link rel="stylesheet" href="./css/defaut.css" type="text/css" id="mode">
 </head>
+  <script src="./js/cookie.js"></script>
 <body>
 <!-- Main -->
-<section id="main" class="w3-container">
-    <header class="w3-padding-top-64 w3-margin-bottom-32 w3-center">
+    <header class="w3-padding-top-32 w3-margin-bottom-32 w3-center">
       <p class=""><img src="./images/logo.png" id="imglogo"></p>
       <p class="w3-xlarge"><b>mot de passe oublié ?<br>pas de problème !</b></p>
 	</header>
-	<article id="content" class="">
+	<article id="content" class="w3-container w3-margin w3-paddin-bottom-16">
 		<form name="reinitmdp" id="reinitmdp" action="./action/reinit_mdp.php" method="POST">
           <div class="w3-row-padding">
             <div class="w3-col m6 s12 w3-margin-bottom">
-			  <label for="email">Renseignez votre email pour recevoir un lien de réinitialisation</label><input class="w3-input" type="email" name="email" id="email" placeholder="mail@exemple.fr" required>
+			  <label for="email">Renseignez votre email pour recevoir un lien de réinitialisation</label>
+			  <input class="w3-input" type="email" name="email" id="email" placeholder="mail@exemple.fr" required>
 			</div>
-            <div class="w3-col m12 w3-margin-top w3-center">
-              <input type="submit" class="w3-button w3-theme" name="btn_reinit" id="btn_reinit" value="Recevoir le lien">
+            <div class="w3-col m6 s12 w3-margin-bottom w3-center">
+              <input type="submit" class="w3-button" name="btn_reinit" id="btn_reinit" value="Recevoir le lien">
 			</div>
 		  </div>
 		</form>
 	</article>
-</section>
 </body>
 </html>

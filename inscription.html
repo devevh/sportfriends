@@ -34,14 +34,14 @@
           <div class="w3-row-padding">
             <div class="w3-col m6 s12 w3-margin-bottom"><label for="prenom">Prénom</label><input class="w3-input" type="text" name="prenom" id="prenom" minlength="3" placeholder="Prénom" required></div>
             <div class="w3-col m6 s12 w3-margin-bottom"><label for="nom">Nom</label><input class="w3-input" type="text" name="nom" id="nom" minlength="4" placeholder="Nom" required></div>
-            <div class="w3-col m6 s12 w3-margin-bottom"><label for="email">Email</label><input class="w3-input" type="email" name="email" id="email" placeholder="mail@exemple.fr"></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="email">Email</label><input class="w3-input" type="email" name="email" id="email" placeholder="mail@exemple.fr" required></div>
             <div class="w3-col m6 s12 w3-margin-bottom"><label for="mdp1">Mot de passe&nbsp;<a href="#reponse"><i class="fa fa-eye" id="voir"></i></a></label><input class="w3-input" type="password" name="mdp1" id="mdp1" minlength="4" required></div>
             <div class="w3-col m6 s12 w3-margin-bottom"><label for="mdp2">Confirmation&nbsp;<i id="checkmdp" class='' ></i></label><input class="w3-input" type="password" name="mdp2" id="mdp2" minlength="4" required></div>
             <div class="w3-col m6 s12 w3-margin-top w3-margin-bottom"><span class="w3-margin-left">Sexe</span>
             <input class="w3-radio w3-margin-left" type="radio" name="sexe" id="f" value="f" required><label for="f">Femme</label>
             <input class="w3-radio w3-margin-left" type="radio" name="sexe" id="h" value="h" required><label for="h">Homme</label>
             </div>
-            <div class="w3-col m6 s12 w3-margin-bottom"><label for="naissance">Date de naissance</label><input class="w3-input" type="date" name="naissance" id="naissance" min="1940-01-01" max="2004-01-01"></div>
+            <div class="w3-col m6 s12 w3-margin-bottom"><label for="naissance">Date de naissance</label><input class="w3-input" type="date" name="naissance" id="naissance" min="1940-01-01" max="2004-01-01" required></div>
             <div class="w3-col m6 s12 w3-margin-bottom"><label for="ville">Ville</label><input class="w3-input" type="text" name="ville" id="ville" placeholder="ville" required></div>
           </div>
           <div class="w3-row-padding">
@@ -67,24 +67,28 @@
               </div>      
           </div>
           <div class="w3-row-padding">
-            <div class="w3-col m12 s12 w3-margin-bottom"><label for="description">Description</label><textarea class="w3-input" name="description" id="description" placeholder="quelques mots de présentation" required></textarea></div>
+            <div class="w3-col m12 s12 w3-margin-bottom"><label for="description">Description</label><textarea class="w3-input" name="description" id="description" placeholder="quelques mots de présentation"></textarea></div>
             <div class="w3-col m12 s12 w3-margin-bottom">
-			  <label for="tags">Tags<b id="ajouterTags" onclick="alert('clic pour ajouter le tag')">&nbsp;+</b></label><input class="w3-input" type="text" name="tags" id="tags" placeholder="mots clés">
+			  <!--<label for="tags">-->
+			  <span class="bouton" onclick="creerTag()" id="ajouterTags">Ajouter des tags</span>
+			  <!--</label>-->
+			  <input class="w3-input" type="text" name="tags" id="tags" placeholder="mots clés" value="">
+			  <!--<label for="lestags">liste des tags</label>--><input class="w3-input" type="hidden" name="lestags" id="lestags" size="10" maxlength="1000" value="" >
 			</div>
 			<div class="w3-col m12 s12 w3-margin-bottom">
 			  <p id="listeTags">
-			    <span class="w3-border-radius tag" id="compte1tag1">tag1<i class="fa fa-circle-xmark tag" onclick="alert('clic pour supprimer le tag')"></i></span>
-			    <span class="w3-border-radius tag" id="compte1tag2">tag2<i class="fa fa-circle-xmark tag" onclick="alert('clic pour supprimer le tag')"></i></span>
+			    <!--<span class="w3-border-radius tag" id="tag1">tag1<i class="fa fa-circle-xmark tag" id="supptag1" onclick="supprimerTag('tag1')"></i></span>
+			    <span class="w3-border-radius tag" id="tag2">tag2<i class="fa fa-circle-xmark tag" id="supptag2" onclick="supprimerTag('tag2')"></i></span>-->
 		      </p>
             </div>
           </div>
           <div class="w3-row-padding">
-          <div class="w3-col m12 w3-margin-bottom"><input type="checkbox" name="chk_consentementGV" id="chk_consentementGV">
-            <label> En cochant cette case, vous reconnaissez explicitement avoir lu les <a href='cg.html' target='_blank'>conditions générales</a>.</label>
+          <div class="w3-col m12 w3-margin-bottom"><input type="checkbox" name="chk_consentementGV" id="chk_consentementGV" required>
+            <label for="chk_consentementGV"> En cochant cette case, vous reconnaissez explicitement avoir lu et accepté les <a href='cg.html' target='_blank'>conditions générales</a>.</label>
           </div>
           <div class="w3-col m12 w3-center w3-margin-bottom">
-            <input type="submit" class="w3-button" name="btn_inscription" id="btn_inscription" value="S'inscrire" disabled>
-            <input type="reset" class="w3-button" value="Annuler">
+            <input type="submit" class="w3-button" name="btn_inscription" id="btn_inscription" value="Créer le profil" disabled>
+            <!--<input type="reset" class="w3-button" value="Annuler">-->
           </div>
         </div>
         </form>

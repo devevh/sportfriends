@@ -57,7 +57,7 @@ if ('serviceWorker' in navigator) {
 /*	let URLsecurisee;
 	URLsecurisee=TTcreateScriptURL("MesRegles", "./sw.js");
 	navigator.serviceWorker.register(URLsecurisee).then(function(reg) {*/
-	navigator.serviceWorker.register("./sw.js").then(function(reg) {
+	navigator.serviceWorker.register("./js/sw.js").then(function(reg) {
 
     if(reg.installing) {
       console.log('Service worker installation en cours');
