@@ -1,3 +1,11 @@
+/* fondamentales */
+
+body,header{background-color:rgb(222, 222, 223)}
+div,p,span,section,article{background-color:rgb(255, 255, 255)}
+#profils{background-color:rgb(222, 222, 223)}
+#modifavatar{background-color:rgb(222, 222, 223)}
+.abonnement{background-color:rgb(222, 222, 223)}
+
 /* theme bleu */
 .w3-theme-l5 {color:#000 !important; background-color:#cdddfe !important}
 .w3-theme-l4 {color:#000 !important; background-color:#9cbcfc !important}
@@ -25,14 +33,14 @@
 /* complémentaire jaune carracci*/
 .w3-theme-comp-l5 {color:#000 !important; background-color:#feeecd !important}
 .w3-theme-comp-l4 {color:#000 !important; background-color:#fcdc9c !important}
-.w3-theme-comp-l3 {color:#fff !important; background-color:#fcd383 !important}
-.w3-theme-comp-l2 {color:#fff !important; background-color:#fbcb6a !important}
-.w3-theme-comp-l1 {color:#fff !important; background-color:#fbc251 !important}
-.w3-theme-comp-d1 {color:#fff !important; background-color:#fab832 !important}
-.w3-theme-comp-d2 {color:#fff !important; background-color:#f9b11f !important}
-.w3-theme-comp-d3 {color:#fff !important; background-color:#e09706 !important}
-.w3-theme-comp-d4 {color:#fff !important; background-color:#ae7604 !important}
-.w3-theme-comp-d5 {color:#fff !important; background-color:#7c5403 !important}
+.w3-theme-comp-l3 {color:#000 !important; background-color:#fcd383 !important}
+.w3-theme-comp-l2 {color:#000 !important; background-color:#fbcb6a !important}
+.w3-theme-comp-l1 {color:#000 !important; background-color:#fbc251 !important}
+.w3-theme-comp-d1 {color:#000 !important; background-color:#fab832 !important}
+.w3-theme-comp-d2 {color:#000 !important; background-color:#f9b11f !important}
+.w3-theme-comp-d3 {color:#000 !important; background-color:#e09706 !important}
+.w3-theme-comp-d4 {color:#000 !important; background-color:#ae7604 !important}
+.w3-theme-comp-d5 {color:#000 !important; background-color:#7c5403 !important}
 
 .w3-theme-comp-light {color:#000 !important; background-color:#feeecd !important}
 .w3-theme-comp-dark {color:#fff !important; background-color:#ae7604 !important}

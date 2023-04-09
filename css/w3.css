@@ -266,7 +266,8 @@ div.affiche_flex_droite, p.affiche_flex_droite{padding:0px;margin:auto;position:
 .message_recu{border-radius:5px;max-width:80%;margin-left:auto;margin-right:0px;overflow-wrap:break-word}
 #contenu_box_conversation_en_cours{height:300px;overflow-x:hidden;overflow-y:auto}
 .bord_epais{border:solid 5px black;}
-.ratio {aspect-ratio:1/2}
+.ratio1sur2 {aspect-ratio:1/2}
+.ratio1sur1 {aspect-ratio:1}
 /* toggle switch*/
 /* The switch - the box around the slider */
 .switch {
@@ -331,3 +332,18 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /* fin toggle switch*/
+
+/* notification de messages
+necessite de passer l'element parent en position relative*/
+.avec-notif{position:relative}
+.avec-notif .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 4px 4px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+.bouton:hover{color:#000!important;background-color:#ccc!important}
+.bouton {padding: 8px 16px;vertical-align: middle;overflow: hidden;text-decoration: none;text-align: center;cursor: pointer;white-space: nowrap;background-color:rgb(222, 222, 223);color:rgb(0,0,0)}

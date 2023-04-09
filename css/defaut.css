@@ -4,7 +4,7 @@ body,header, footer{background-color:rgb(222, 222, 223)}
 div,p,span,section,article,form,td{background-color:rgb(255, 255, 255)}
 footer p{background-color:rgb(222, 222, 223)}
 header p{background-color:rgb(222, 222, 223)}
-input[type="submit"]{background-color:rgb(222, 222, 223);color:rgb(0,0,0)}
+button,input[type="submit"]{background-color:rgb(222, 222, 223);color:rgb(0,0,0)}
 .tag{background-color:rgb(222, 222, 223);color:rgb(0,0,0)}
 #profils{background-color:rgb(222, 222, 223)}
 #modifavatar{background-color:rgb(222, 222, 223)}
