@@ -1,3 +1,74 @@
+function creerElement(idParent,typeElement,idElmt,classe,texte) {
+	var elmt = document.createElement(typeElement);
+	elmt.setAttribute("id", idElmt);
+	elmt.setAttribute("class", classe);
+	if (texte>"") elmt.appendChild(document.createTextNode(texte));
+	document.getElementById(idParent).appendChild(elmt);
+}
+
+function creerTag(){
+  //recuperer la valeur du texte
+  let texte = document.getElementById('tags').value;
+  texte = texte.trim();
+  //uniquement si une valeur est écrite
+  if (texte > '') {
+	//boucler sur className('tag') pour avoir le nombre de tag déjà présents et calculer le nouveau numéro
+	let collectionTags=document.getElementsByClassName('tag');
+	let nouveauNumero=1+collectionTags.length/2;
+	let idTag = 'tag'+nouveauNumero;
+	//créer le tag
+	creerElement('listeTags','span',idTag,'w3-border-radius tag',texte);
+	//créer l'icone de suppression du tag
+	creerElement(idTag,'i','supp'+idTag,'fa fa-circle-xmark tag','');
+	elmt = document.getElementById('supp'+idTag);
+	elmt.setAttribute("onclick", "supprimerTag('"+idTag+"')");
+	//ajouter la value dans le input hidden, faire un json pour plus de simplicité
+	document.getElementById('lestags').value +='§'+idTag+':'+texte;
+	//effacer l'input
+	document.getElementById('tags').value ='';
+  }
+}
+
+function supprimerTag(idTag) {
+  //identifer le tag à supprimer
+  const element = document.getElementById(idTag);
+  //parcourir l'ensemble des nodes enfants pour les supprimer
+  while (element.hasChildNodes()) {
+    element.removeChild(element.firstChild);
+  }
+  //supprimer le parent
+  element.remove();
+  //supprimer la chaine de valeur dans le input hidden
+  let h = document.getElementById('lestags');
+  //1 recupérer la valeur
+  let hv = h.value;
+  //2 la découper sur §
+  const tabhv= hv.split('§'); //====> attention split crée a minima un tableau de 1 poste qui contient ''
+  tabhv.shift();
+  let i = 0;
+  //3 découper chaque poste sur :
+  let tagh = '';
+  for (tagh of tabhv) {
+	const paireTag = tagh.split(':');
+  //4 si tag = idTag alors supprimer le poste avec la methode splice(index,1)
+    if (paireTag[0] === idTag) {
+	  tabhv.splice(i,1);
+	  break;
+	}
+	i++;
+  }
+  //5 remplacer la valeur par le tableau
+  h.value = "";
+  /*for (tag of tablisteTags) {
+	texte += '§'+tag;
+  }
+  texte = '§' + tablisteTags.join('§');*/
+  //ecrire uniquement si le tableau n'est pas vide
+  if (tabhv[0] > '') {
+    h.value = '§' + tabhv.join('§');
+  }
+}
+
 function desactiveBtnInscription() {
 var btnS = document.getElementById("btn_inscription");
 //alert('clic reset');
@@ -54,92 +125,6 @@ if (document.getElementById('pseudo')) {
 	xhttp.open("POST", url, true);
 	xhttp.setRequestHeader ('Content-Type','application/x-www-form-urlencoded');
 	xhttp.send("pseudo="+pseudo);
-};
-}
-//
-//*********************************************************************************************************
-//appel de telephone_existe en AJAX sans jquery
-if (document.getElementById('telephone')) {
-	document.getElementById('telephone').onblur = function () {
-	//initialisation du paramètre passé au php
-	var tel = document.getElementById('telephone').value;
-	tel=TTcreateHTML('MesRegles', tel);
-	var ctrl=document.getElementById('controle');
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			switch (this.responseText) {
-				case 'Query' :
-					ctrl.innerHTML = "Erreur de requête XHR telephone_existe";
-					break;
-				case 'NAN' :
-					ctrl.innerHTML = "Numéro non valide, inscrire uniquement des chiffres sans espace";
-					ctrl.className="w3-text-red";
-					document.getElementById('telephone').focus();
-					break;
-				case 'OUI' :
-					ctrl.innerHTML = "Le numéro <b>"+tel+"</b> est déjà utilisé par un autre compte WANDI";
-					ctrl.className="w3-text-red";
-					document.getElementById('telephone').focus();
-					break;
-				default :
-					ctrl.innerHTML = "";
-					ctrl.className="";
-			}
-		}
-	};
-	var url = "./telephone_existe.php";
-	xhttp.open("POST", url, true);
-	xhttp.setRequestHeader ('Content-Type','application/x-www-form-urlencoded');
-	xhttp.send("telephone="+tel);
-};
-}
-//
-//*********************************************************************************************************
-//appel de telephone_existe en AJAX sans jquery pour le parrain
-if (document.getElementById('parrain')) {
-	document.getElementById('parrain').onblur = function () {
-	//initialisation du paramètre passé au php
-	var tel = document.getElementById('parrain').value;
-	tel=TTcreateHTML('MesRegles', tel);
-	var telt = document.getElementById('telephone').value;
-	var ctrl=document.getElementById('controle');
-	var xhttp = new XMLHttpRequest();
-	//uniquement si le parrain est renseigné
-	if (tel > '' && tel != telt) {
-		xhttp.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				switch (this.responseText) {
-					case 'Query' :
-						ctrl.innerHTML = "Erreur de requête XHR telephone_existe";
-						break;
-					case 'NAN' :
-						ctrl.innerHTML = "Numéro non valide, inscrire uniquement des chiffres sans espace";
-						ctrl.className="w3-text-red";
-						document.getElementById('parrain').focus();
-						break;
-					case 'NON' :
-						ctrl.innerHTML = "Le numéro <b>"+tel+"</b> est inconnu";
-						ctrl.className="w3-text-red";
-						document.getElementById('parrain').focus();
-						break;
-					default :
-						ctrl.innerHTML = "";
-						ctrl.className="";
-				}
-			}
-		};
-		var url = "./telephone_existe.php";
-		xhttp.open("POST", url, true);
-		xhttp.setRequestHeader ('Content-Type','application/x-www-form-urlencoded');
-		xhttp.send("telephone="+tel);
-	}
-	if (tel > '' && tel == telt) {
-		ctrl.innerHTML = "Auto-parrainage interdit";
-		ctrl.className="w3-text-red";
-		document.getElementById('parrain').value = "";
-		document.getElementById('parrain').focus();
-	}
 };
 }
 //
