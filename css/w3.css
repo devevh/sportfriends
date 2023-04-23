@@ -347,3 +347,16 @@ necessite de passer l'element parent en position relative*/
 }
 .bouton:hover{color:#000!important;background-color:#ccc!important}
 .bouton {padding: 8px 16px;vertical-align: middle;overflow: hidden;text-decoration: none;text-align: center;cursor: pointer;white-space: nowrap;background-color:rgb(222, 222, 223);color:rgb(0,0,0)}
+
+.boite-flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.element-flex{
+flex-grow:1;
+}
+
+.element-flex:hover{
+flex-grow:2;
+}
