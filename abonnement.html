@@ -9,8 +9,8 @@
     <link rel="apple-touch-icon" href="./images/icones/logo.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="./css/w3.css" type="text/css">
-    <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
     <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+    <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
 	<link rel="stylesheet" href="./css/defaut.css" type="text/css" id="mode">
   </head>
   <script src="./js/cookie.js"></script>
@@ -21,62 +21,43 @@
       <img src="./images/logo_bandeau.png" id="imglogo">
   </header>
     <!-- Main -->
-    <section class="w3-margin abonnement" id="colonnes">
-        <header class="w3-center">
-          <p class=" abonnement">Gérer son abonnement SportFriends</p>
-        </header>
-        <span id="infoconnexion"></span>
-		<article class="w3-row abonnement">
-        <!--<form name="formmajabo" id="formmajabo" action="./action/majabonnement.php" method="POST" ></form>-->
-            <div class="w3-third-small abonnement w3-padding-small">
-              <div class="w3-border-radius ratio1sur2">
-                <p class="w3-center w3-padding-bottom-16">FREE<br><b>compte gratuit publicité</b></p>
-                <p class="w3-center"><span class="w3-large">0</span><sup>€/mois</sup></p>
-              </div>
+    <!-- affichage en colonnes avec flex : grossissement de la zone survolée et cliquée, ne fonctionne pas sur petits écrans-->
+	<section class="w3-container w3-center abonnement">
+    <h4 class="abonnement">Gérer son abonnement SportFriends</h4>
+    <h5 class="abonnement">Les avantages de s'abonner :</h5>
+	  <ol class="w3-left-align" >
+	    <li>Plus de critères pour rechercher des profils</li>
+	    <li>Pouvoir gérer son statut</li>
+	    <li>Pouvoir proposer des évènements</li>
+	    <li>...</li>
+	  </ol>
+	  <form name="formmajabo" id="formmajabo" action="./action/majabonnement.php" method="POST" class="abonnement">
+		<article class="w3-margin boite-flex abonnement">
+            <div class="element-flex w3-center w3-border-radius">
+                <label for="formule1"><p class=" w3-padding-bottom-16">1 mois<br>
+				<span class="w3-large">6,99€</span></p>
+				<input type="radio" name="formule" id="formule1" value="f1" class=""></label>
             </div>
-            <div class="w3-third-small abonnement w3-padding-small">
-              <div class="w3-border-radius ratio1sur2">
-                <p class="w3-center w3-padding-bottom-16">BEST<br>
-                <b class="w3-text">Pas de publicité</b><br>
-                </p>
-                <p class="w3-center" ><span class="w3-large">1,99</span><sup>€/mois</sup></p>
-              </div>
+            <div class="element-flex w3-center w3-border-radius">
+                <label for="formule2"><p class=" w3-padding-bottom-16">6 mois<br>
+				<span class="w3-large">39,99€</span></p>
+				<input type="radio" name="formule" id="formule2" value="f2" class=""></label>
             </div>
-            <div class="w3-third-small abonnement w3-padding-small">
-              <div class="w3-border-radius ratio1sur2">
-                <p class="w3-center w3-padding-bottom-16">PREMIUM<br>
-                <b class="w3-text-theme-comp">Pas de publicité</b><br>
-                </p>
-                <p class="w3-center" ><span class="w3-large">5,99</span><sup>€/mois</sup></p>
-              </div>
+            <div class="element-flex w3-center w3-border-radius w3-border-blue">
+                <label for="formule3" ><p class=" w3-padding-bottom-16">1 an<br>
+				<span class="w3-large">59,99€</span></p>
+				<input type="radio" name="formule" id="formule3" value="f3" class=""></label>
+            </div>
+            <div class="element-flex w3-center w3-border-radius w3-border-red">
+                <label for="formule4"><p class=" w3-padding-bottom-16">A vie<br>
+				<span class="w3-large">149,99€</span></p>
+				<input type="radio" name="formule" id="formule4" value="f4" class=""></label>
             </div>
 		  </article>
-    </section>
-    <section id="lignes" class="w3-margin">
-        <header class="w3-center">
-          <p class=" abonnement">Affichage en lignes</p>
-        </header>
-        <span id="infoconnexion2"></span>
-        <form name="formmajabo" id="formmajabo" action="./action/majabonnement.php" method="POST" ></form>
-          <div class="w3-row abonnement">
-            <div class="w3-col m12 s12 w3-margin-bottom">
-              <p class="w3-center w3-padding-bottom-16">FREE<br><b>compte gratuit limité avec publicité</b></p>
-              <p class="w3-center"><span class="w3-large">0</span><sup>€/mois</sup></p>
-            </div>
-            <div class="w3-col m12 s12 w3-margin-bottom">
-              <p class="w3-center w3-padding-bottom-16">BEST<br>
-              <b class="w3-text">Pas de publicité, limité</b><br>
-              </p>
-              <p class="w3-center"><span class="w3-large">1,99</span><sup>€/mois</sup></p>
-            </div>
-            <div class="w3-col m12 s12 w3-margin-bottom">
-              <p class="w3-center w3-padding-bottom-16">PREMIUM<br>
-              <b class="w3-text-theme-comp">Pas de publicité, full service</b><br>
-              </p>
-              <p class="w3-center"><span class="w3-large">5,99</span><sup>€/mois</sup></p>
-            </div>
-          </div>
-    </section>
+      <p class="w3-center abonnement">Cliquez sur la formule choisie, en validant vous serez redirigé.e vers la page de paiement sécurisé<br>
+	  <input type="submit" class="w3-theme-comp-d3" id="sub_formule_abo" value="Valider mon choix"></p>
+	</form>
+  </section>  
   <!-- Footer -->
   <footer class="w3-padding-32">
   </footer>
