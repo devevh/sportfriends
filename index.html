@@ -1,31 +1,171 @@
 <!DOCTYPE html>
-  <html lang="fr">
-  <head>
-    <title>Front SPORTFRIENDS</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/w3.css" type="text/css">
-    <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
-    <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
-	<link rel="stylesheet" href="./css/defaut.css" type="text/css" id="mode">
-  </head>
-  <script src="./js/cookie.js"></script>
-  <body>
-    <header class="w3-padding-top-32 w3-padding-bottom-32 w3-center">
-      <p class=""><img src="./images/logo.png" id="imglogo"></p>
-      <h1 class="w3-xxxlarge">SPORTFRIENDS</h1>
-	</header>
-    <section class="w3-row w3-margin w3-center" id="main">
-	  <article class="w3-col m12 s12 w3-bar-block w3-margin-bottom w3-padding" id="inscription.html" onclick="window.location.assign(this.id)">
-	    <p class="w3-large"><b>1ère connexion</b></p>
-	  </article>
-	  <article class="w3-col m12 s12 w3-bar-block w3-margin-bottom w3-padding" id="connexion.html" onclick="window.location.assign(this.id)">
-	    <p class="w3-large"><b>login</b></p>
-	  </article>
+<html lang="fr"><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>SPORTFRIENDS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="rgb(222, 222, 223)">
+  <meta name="description" content="Application de rencontre entre personnes qui souhaitent profiter pleinement de leur abonnement sportif">
+  <meta name="robots" content="index, follow">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="shortcut icon" href="./images/favicon.png">
+  <link rel="apple-touch-icon" href="./images/logo192blanc.png">
+  <link rel="stylesheet" href="./css/w3.css" type="text/css">
+  <link rel="stylesheet" href="./css/v4.css" type="text/css">
+  <link rel="stylesheet" href="./css/w3-theme-bleu.css" type="text/css">
+  <link rel="stylesheet" href="./css/fontAwesome/css/all.css" type="text/css">
+  <link rel="stylesheet" href="./css/defaut.css" type="text/css" id="mode">
+<style>
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="w3-top">
+  <nav class="w3-bar w3-card w3-center w3-large w3-white" style="opacity:0.9">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-margin w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-margin w3-round-large" href="./app.html">SPORTFRIENDS</a>
+    <a class="w3-button w3-hide-small w3-padding w3-margin w3-hover-light-grey w3-blue w3-round-large" href="inscription.html">Ouvrir un compte</a>
+    <a class="w3-button w3-hide-small w3-padding w3-margin w3-hover-light-grey w3-blue w3-round-large" href="connexion.html">J'ai déjà un compte</a>
+  </nav>
+
+  <!-- Navbar on small screens -->
+  <nav id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hover-light-grey w3-blue" href="inscription.html">Ouvrir un compte</a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hover-light-grey w3-blue" href="connexion.html">J'ai déjà un compte</a>
+  </nav>
+</nav>
+<header class="w3-container w3-center" style="padding:32px">
+</header>
+<!-- Header 
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">START PAGE</h1>
+  <p class="w3-xlarge">Template by w3.css</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+</header>-->
+
+<!-- First Grid -->
+<section class="w3-row-padding w3-padding-64 w3-container">
+  <section class="w3-content">
+    <section class="w3-twothird">
+      <h1 class="heavy w3-xxlarge w3-center bg_gradient_to_r">#SPORTFRIENDS</h1>
+	  <p class="w3-xlarge">L'appli pour trouver la bonne personne en salle
+	  </p>
+	  <p>Profitez pleinement de votre abonnement sportif en salle grâce au match que vous ferez.<br>
+	  Notre équipe est à votre disposition par tchat ou mail.</p>
+	  <p>
+	  <a href="#" class="w3-button w3-padding w3-hover-light-grey w3-blue w3-round-large">Ouvrir un compte gratuit</a>
+	  </p>
     </section>
-    <!-- Footer -->
-    <footer class="w3-margin-top w3-padding-32">
-	  <p class="w3-large w3-center"><b>Phrase d'accroche</b></p>
-    </footer>
-  </body>
-</html>
+
+    <section class="w3-third w3-center">
+      <!--<i class="fa fa-anchor w3-padding-64 w3-text-red"></i>-->
+	  <img class="w3-img w3-margin w3-animate-bottom" src="./images/vue-de-face-smartphone-avec-l-affichage-neutre-sans-encadrement-d-isolement-sur-le-fond-blanc-152725833.webp" title="Appli sur smartphone" alt="Appli sur smartphone">
+    </section>
+  </section>
+</section>
+
+<!-- interstitiel -->
+<section class="w3-container w3-black w3-center w3-padding-64">
+  <section class="w3-content w3-black">
+    <section class="w3-third w3-container w3-black">
+    <p class="w3-large w3-black"><i class="fa fa-stopwatch"></i>&nbsp;Ouverture en 1 min</p>
+	<p class="w3-black">Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+	</section>
+    <section class="w3-third w3-container w3-black">
+    <p class="w3-large w3-black"><i class="fa fa-mobile"></i>&nbsp;Accédez aux services via l'appli</p>
+	<p class="w3-black">Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+	</section>
+    <section class="w3-third w3-container w3-black">
+    <p class="w3-large w3-black"><i class="fa fa-question"></i>&nbsp;Tip 3</p>
+	<p class="w3-black">Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+	</section>
+  </section>
+</section>
+
+<!-- Second Grid -->
+<section class="w3-row-padding w3-padding-32 w3-container abonnement">
+<h1 class="heavy w3-margin2 w3-xxlarge w3-center abonnement">
+Des tarifs transparents, sans surprise, pour tout le monde
+</h1>
+	<section class="w3-container w3-center abonnement">
+		<article class="w3-margin boite-flex abonnement">
+            <div class="element-flex w3-center w3-border-radius">
+                <p class=" w3-padding-bottom-16">1 mois<br>
+				<span class="w3-large">6,99€</span><br>
+				<ul class="checkmark" style="text-align:left">
+				<li>Recherche multi-critères</li>
+				<li>Messagerie</li>
+				<li>Evènements</li>
+				</ul>
+				</p>
+            </div>
+            <div class="element-flex w3-center w3-border-radius">
+                <p class=" w3-padding-bottom-16">6 mois<br>
+				<span class="w3-large">39,99€</span><br>
+				<ul class="checkmark" style="text-align:left">
+				<li>Recherche multi-critères</li>
+				<li>Messagerie</li>
+				<li>Evènements</li>
+				</ul>
+				</p>
+            </div>
+            <div class="element-flex w3-center w3-border-radius w3-border-blue">
+                <p class=" w3-padding-bottom-16">1 an<br>
+				<span class="w3-large">59,99€</span><br>
+				<ul class="checkmark" style="text-align:left">
+				<li>Recherche multi-critères</li>
+				<li>Messagerie</li>
+				<li>Evènements</li>
+				<li>Créer des évènements</li>
+				</ul>
+				</p>
+            </div>
+            <div class="element-flex w3-center w3-border-radius w3-border-red">
+                <p class=" w3-padding-bottom-16">A vie<br>
+				<span class="w3-large">149,99€</span><br>
+				<ul class="checkmark" style="text-align:left">
+				<li>Recherche multi-critères</li>
+				<li>Messagerie</li>
+				<li>Evènements</li>
+				<li>Créer des évènements</li>
+				<li>Mode invisible</li>
+				</ul>
+				</p>
+            </div>
+		</article>
+  </section>
+</section>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-row w3-padding-64 w3-center w3-black">  
+  <section class="w3-col l6 s12 w3-xlarge w3-padding-32 w3-black">
+    <h5>Société</h5>
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-snapchat w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+ </section>
+  <section class="w3-col l6 s12 w3-padding-32 w3-black">
+    <h5>Ressources</h5>
+	<ul class="blanc">
+	 <li>Conditions générales de vente</li>
+	 <li>Mode d'emploi</li>
+	 <li>Questions fréquentes</li>
+	<ul>
+ </section>
+</footer>
+
+<script src="./js/w3.js" type="text/javascript"></script>
+
+
+</body></html>
