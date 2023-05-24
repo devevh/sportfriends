@@ -1,0 +1,40 @@
+/*
+css de la v4 du site officiel monwandi.com
+*/
+body,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+ul.checkmark{
+list-style-type:none;
+list-style-image:url('../images/th_small.png');
+list-style-position: outside;
+}
+ul.blanc{list-style-type:none;line-height:2.5em;text-align:left}
+.blanc>li{margin-bottom:10px;}
+.heavy{
+  font-family: "Cocogoose", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-display: block;
+  src: url("./fonts/Cocogoose Pro-trial.ttf") format("truetype");
+}
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/*
+texte avec gradient
+*/
+.bg_gradient_to_r{
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image:-webkit-linear-gradient(left, #209bfe 30%, #8333fc 50%, #ff7800 70%);
+}
+@media (min-width:601px){
+.boite-flex {display: flex;flex-wrap: nowrap;}
+.element-flex{flex:1 1 0;}
+}
+@media (max-width:600px){
+.boite-flex {display: block}
+.element-flex{display: block}
+}
